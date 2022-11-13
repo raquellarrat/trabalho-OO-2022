@@ -13,6 +13,6 @@ public class TrabalhoOO {
 
     public static void main(String[] args) {
         Jogo jogo = new Jogo();
-        jogo.jogar("rosca");
+        jogo.jogar();
     }
 }

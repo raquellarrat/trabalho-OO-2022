@@ -20,38 +20,35 @@ public class Palavra {
     public void transforma(String palavra){
         for(int i = 0; i < palavra.length(); i++){
             letras[i].setChar(palavra.charAt(i));
-            //System.out.print(letras[i].getChar());
         }
     }
     
     public void setCores(String palavraSecreta){
         for(int i = 0; i < palavraSecreta.length(); i++){
-            if(buscaCaractere(palavraSecreta.charAt(i))!= -1){
-                if(letras[i].getChar() == palavraSecreta.charAt(i))
-                    letras[i].setCor(1);
-                else{ 
-                    letras[i].setCor(2);
-                    System.out.println(letras[i].getChar());
-                }   
-            }
-            else
-                letras[i].setCor(3);
-            System.out.print(letras[i].getCor() + " ");
+            auxiliarSetCores(letras[i], i, palavraSecreta);
         }
         
     }
     
-    private int buscaCaractere(char c){
-        for (int i = 0; i < 5; i++){
-            if(letras[i].getChar() == c)
-                return i;
+    private void auxiliarSetCores(Letra letra, int posicao, String palavraSecreta){
+        if(palavraSecreta.charAt(posicao) == letra.getChar())
+            letra.setCor(1);
+        else{
+            for(int i = 0; i < 5; i++){
+                if(palavraSecreta.charAt(i) == letra.getChar()){
+                    letra.setCor(2);
+                    break;
+                }
+            }
         }
-        return -1;
+        if(letra.getCor() != 1 && letra.getCor() != 2)
+            letra.setCor(3);
     }
     
     public void imprime(){
         for(int i = 0; i < 5; i++){
-            System.out.println(letras[i].getChar());
+            System.out.println(letras[i].getChar() + "----" + letras[i].getCor());
+            System.out.println();
         }
     }
     

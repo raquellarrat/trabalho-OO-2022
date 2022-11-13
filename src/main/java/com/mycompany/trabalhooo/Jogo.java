@@ -9,17 +9,33 @@ package com.mycompany.trabalhooo;
  * @author NOTE
  */
 import java.util.*;
+import java.util.Scanner;
 public class Jogo {
     String palavraSecreta = "porta";
+    int vidas = 5;
     List<Palavra> listaPalavras = new ArrayList<Palavra>();
     
-    public void jogar(String tentativa){
+    public void jogar(){
+        String tentativa;
+        Scanner s = new Scanner(System.in);
+        System.out.println("Digite sua palavra");
+        tentativa = s.nextLine();
         if(tentativa.length() == 5){
-            Palavra palavra = new Palavra();
-            palavra.transforma(tentativa);
-            palavra.setCores(palavraSecreta);
-            
+            while(vidas >= 0 && !tentativa.equals(palavraSecreta)){
+                Palavra palavra = new Palavra();
+                palavra.transforma(tentativa);
+                palavra.setCores(palavraSecreta);
+                listaPalavras.add(palavra);
+                imprimirTela(palavra);
+                vidas--;
+                System.out.println("Digite sua palavra");
+                tentativa = s.nextLine();
+            }
         }
+    }
+    private void imprimirTela(Palavra palavra){
+        for(int i = 0; i < listaPalavras.size(); i++)
+            listaPalavras.get(i).imprime();
     }
     /*Palavra [] palavras = new Palavra[5];
     int vidas = 5;
