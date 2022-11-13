@@ -17,7 +17,7 @@ public class Palavra {
         }
     }
     
-    public void transforma(String palavra){
+    public void transforma(String palavra){ //// transforma a palavra tentativa em um vetor de Letra
         for(int i = 0; i < palavra.length(); i++){
             letras[i].setChar(palavra.charAt(i));
         }
@@ -46,10 +46,18 @@ public class Palavra {
     }
     
     public void imprime(){
-        for(int i = 0; i < 5; i++){
-            System.out.println(letras[i].getChar() + "----" + letras[i].getCor());
-            System.out.println();
+        
+        for (int i = 0; i < 5; i++){
+            System.out.print(letras[i].getChar() + " ");
         }
+        System.out.println();
+        for (int i = 0; i < 5; i++){
+        System.out.print(letras[i].getCor() + " ");
+    }
+//        for(int i = 0; i < 5; i++){
+//            System.out.print(letras[i].getChar() + "----" + letras[i].getCor());
+//            System.out.println();
+//        }
     }
     
 }

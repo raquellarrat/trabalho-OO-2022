@@ -19,23 +19,37 @@ public class Jogo {
         String tentativa;
         Scanner s = new Scanner(System.in);
         System.out.println("Digite sua palavra");
+        System.out.println("_ _ _ _ _");
         tentativa = s.nextLine();
         if(tentativa.length() == 5){
-            while(vidas >= 0 && !tentativa.equals(palavraSecreta)){
+            while(vidas >= 0){
+            if(tentativa.equals(palavraSecreta)){
+                System.out.println("Parabéns, você acertou! A palavra secreta é " + palavraSecreta + "!");
+                return;
+            }
                 Palavra palavra = new Palavra();
                 palavra.transforma(tentativa);
                 palavra.setCores(palavraSecreta);
                 listaPalavras.add(palavra);
                 imprimirTela(palavra);
                 vidas--;
-                System.out.println("Digite sua palavra");
+                //System.out.println("Digite sua palavra");
+                System.out.println();
+                System.out.println("_ _ _ _ _");
                 tentativa = s.nextLine();
             }
         }
     }
     private void imprimirTela(Palavra palavra){
-        for(int i = 0; i < listaPalavras.size(); i++)
+        for(int i = 0; i < listaPalavras.size(); i++){
+            System.out.println();
             listaPalavras.get(i).imprime();
+        }
+      
+            
+        
+        
+        
     }
     /*Palavra [] palavras = new Palavra[5];
     int vidas = 5;
