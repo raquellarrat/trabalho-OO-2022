@@ -32,17 +32,17 @@ public class Palavra {
     
     private void auxiliarSetCores(Letra letra, int posicao, String palavraSecreta){
         if(palavraSecreta.charAt(posicao) == letra.getChar())
-            letra.setCor(1);
+            letra.setCor(1);  /// cor verde: a letra existe na palavra e se encontra na mesma posiçao
         else{
             for(int i = 0; i < 5; i++){
                 if(palavraSecreta.charAt(i) == letra.getChar()){
-                    letra.setCor(2);
+                    letra.setCor(2);  /// cor amarela: a letra se encontra na palavra, mas em posição distinta
                     break;
                 }
             }
         }
         if(letra.getCor() != 1 && letra.getCor() != 2)
-            letra.setCor(3);
+            letra.setCor(3);   /// cor cinza: a letra não se encontra na palavra
     }
     
     public void imprime(){

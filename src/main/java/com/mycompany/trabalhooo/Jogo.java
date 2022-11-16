@@ -11,9 +11,9 @@ package com.mycompany.trabalhooo;
 import java.util.*;
 import java.util.Scanner;
 public class Jogo {
-    String palavraSecreta = "porta";
+    String palavraSecreta = "porta";  /// palavra que será sorteada para o jogador adivinhar
     int vidas = 5;
-    List<Palavra> listaPalavras = new ArrayList<Palavra>();
+    List<Palavra> listaPalavras = new ArrayList<Palavra>();  /// lista que será preenchida com as palavras tentativa do jogador
     
     public void jogar(){
         String tentativa;
