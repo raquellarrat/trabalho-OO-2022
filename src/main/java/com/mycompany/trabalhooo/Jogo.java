@@ -13,12 +13,10 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Jogo {
-    //String palavraSecreta = "porta";  /// palavra que será sorteada para o jogador adivinhar
-    //String palavraSecreta = "";
-    String[] palavrasSecretas = {"porta", "forca", "nadar", "velho", "rosca"};
+    String[] palavrasSecretas = {"porta", "forca", "nadar", "velho", "rosca", "louca", "feliz", "pobre"};
     Random random = new Random();
-    int indice = random.nextInt(4);
-    String palavraSecreta = palavrasSecretas[indice];
+    int indice = random.nextInt(7);  /// sorteia um índice para pegar uma string de palavrasSecretas
+    String palavraSecreta = palavrasSecretas[indice]; /// palavra que será sorteada para o jogador adivinhar
 
     int vidas = 5;
     List<Palavra> listaPalavras = new ArrayList<Palavra>();  /// lista que será preenchida com as palavras tentativa do jogador
@@ -41,7 +39,7 @@ public class Jogo {
                 listaPalavras.add(palavra);
                 imprimirTela(palavra);
                 vidas--;
-                //System.out.println("Digite sua palavra");
+                
                 System.out.println();
                 System.out.println("_ _ _ _ _");
                 tentativa = s.nextLine();
@@ -52,36 +50,8 @@ public class Jogo {
         for(int i = 0; i < listaPalavras.size(); i++){
             System.out.println();
             listaPalavras.get(i).imprime();
-        }
-      
-            
-        
-        
+        }   
         
     }
-    /*Palavra [] palavras = new Palavra[5];
-    int vidas = 5;
-    private String secreta;
-    String auxiliar = "-----";
-    Letra letra = new Letra();
-    
-    public void jogar(String tentativa){
-        while(vidas > 0 && !secreta.equals(tentativa)){
-            for(int i = 0; i < secreta.length(); i++){
-                if(tentativa.indexOf(secreta.charAt(i))!= -1){
-                    if(tentativa.indexOf(secreta.charAt(i))== i)
-                        letra.setChar(secreta.charAt(i));//colocar cor verde;
-                        letra.setCor(1);
-                    else{
-                        letra.setChar(secreta.charAt(i));//colocar cor verde;
-                        letra.setCor(2);//colocar cor amarela;  
-                    }
-                }
-                else{
-                    //colocar cinza;
-                }
-            }
-        }
-    }*/
     
 }
