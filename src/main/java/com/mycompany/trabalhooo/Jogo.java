@@ -10,8 +10,16 @@ package com.mycompany.trabalhooo;
  */
 import java.util.*;
 import java.util.Scanner;
+import java.util.Random;
+
 public class Jogo {
-    String palavraSecreta = "porta";  /// palavra que será sorteada para o jogador adivinhar
+    //String palavraSecreta = "porta";  /// palavra que será sorteada para o jogador adivinhar
+    //String palavraSecreta = "";
+    String[] palavrasSecretas = {"porta", "forca", "nadar", "velho", "rosca"};
+    Random random = new Random();
+    int indice = random.nextInt(4);
+    String palavraSecreta = palavrasSecretas[indice];
+
     int vidas = 5;
     List<Palavra> listaPalavras = new ArrayList<Palavra>();  /// lista que será preenchida com as palavras tentativa do jogador
     
