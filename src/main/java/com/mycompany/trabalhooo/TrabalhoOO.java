@@ -2,7 +2,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
-
 package com.mycompany.trabalhooo;
 
 /**
@@ -11,12 +10,9 @@ package com.mycompany.trabalhooo;
  */
 public class TrabalhoOO {
 
-
     public static void main(String[] args) {
-        
-        Teclado teclado = new Teclado();
-        
- 
-       
+        Jogo jogo = new Jogo();
+        jogo.jogar();
     }
+
 }
