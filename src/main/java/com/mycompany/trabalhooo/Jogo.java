@@ -105,4 +105,18 @@ public class Jogo {
         return palavraAleatoria;
     }
     
+    
+    
+    
+    ////////////////// Testando criação de função pra jogar pela interface
+    
+    public void JogarInterface(){
+        TelaDeJogo tela = new TelaDeJogo();
+    }
+    
 }
+
+
+
+
+

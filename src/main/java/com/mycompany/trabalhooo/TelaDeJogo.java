@@ -49,6 +49,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
     boolean bloco33Selecionado = false;
     boolean bloco34Selecionado = false;
     boolean bloco35Selecionado = false;
+    boolean blocoEnterSelecionado = false;
     
     
     
@@ -91,8 +92,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         b = new javax.swing.JToggleButton();
         n = new javax.swing.JToggleButton();
         m = new javax.swing.JToggleButton();
-        jToggleButton25 = new javax.swing.JToggleButton();
-        jToggleButton26 = new javax.swing.JToggleButton();
+        enter = new javax.swing.JToggleButton();
         p = new javax.swing.JToggleButton();
         l = new javax.swing.JToggleButton();
         botao1 = new javax.swing.JToggleButton();
@@ -377,23 +377,13 @@ public class TelaDeJogo extends javax.swing.JFrame {
             }
         });
 
-        jToggleButton25.setBackground(new java.awt.Color(51, 51, 51));
-        jToggleButton25.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jToggleButton25.setForeground(new java.awt.Color(255, 255, 255));
-        jToggleButton25.setText("<");
-        jToggleButton25.addActionListener(new java.awt.event.ActionListener() {
+        enter.setBackground(new java.awt.Color(51, 51, 51));
+        enter.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        enter.setForeground(new java.awt.Color(255, 255, 255));
+        enter.setText("ENTER");
+        enter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton25ActionPerformed(evt);
-            }
-        });
-
-        jToggleButton26.setBackground(new java.awt.Color(51, 51, 51));
-        jToggleButton26.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jToggleButton26.setForeground(new java.awt.Color(255, 255, 255));
-        jToggleButton26.setText("ENTER");
-        jToggleButton26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton26ActionPerformed(evt);
+                enterActionPerformed(evt);
             }
         });
 
@@ -818,11 +808,8 @@ public class TelaDeJogo extends javax.swing.JFrame {
                                         .addComponent(m, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jToggleButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(l, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jToggleButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(enter, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(l, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -842,7 +829,8 @@ public class TelaDeJogo extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(o, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(27, 27, 27)))
                 .addContainerGap(66, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -921,11 +909,10 @@ public class TelaDeJogo extends javax.swing.JFrame {
                     .addComponent(h, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(j, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(k, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(l, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(enter, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(z, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(x, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1230,13 +1217,11 @@ public class TelaDeJogo extends javax.swing.JFrame {
         
     }//GEN-LAST:event_mActionPerformed
 
-    private void jToggleButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton25ActionPerformed
+    private void enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton25ActionPerformed
-
-    private void jToggleButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton26ActionPerformed
+        blocoEnterSelecionado = true;
+        
+    }//GEN-LAST:event_enterActionPerformed
 
     private void lActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lActionPerformed
         // TODO add your handling code here:
@@ -4967,14 +4952,13 @@ public class TelaDeJogo extends javax.swing.JFrame {
     private javax.swing.JToggleButton c;
     private javax.swing.JToggleButton d;
     private javax.swing.JToggleButton e;
+    private javax.swing.JToggleButton enter;
     private javax.swing.JToggleButton f;
     private javax.swing.JToggleButton g;
     private javax.swing.JToggleButton h;
     private javax.swing.JToggleButton i;
     private javax.swing.JToggleButton j;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JToggleButton jToggleButton25;
-    private javax.swing.JToggleButton jToggleButton26;
     private javax.swing.JToggleButton k;
     private javax.swing.JToggleButton l;
     private javax.swing.JToggleButton m;

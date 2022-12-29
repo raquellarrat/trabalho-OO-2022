@@ -153,12 +153,8 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jToggleButton26" min="-2" pref="76" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="l" min="-2" pref="40" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jToggleButton25" min="-2" pref="51" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="enter" min="-2" pref="76" max="-2" attributes="0"/>
+                                  <Component id="l" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -183,6 +179,7 @@
                               <Component id="p" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="66" max="32767" attributes="0"/>
@@ -273,12 +270,11 @@
                   <Component id="h" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                   <Component id="j" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                   <Component id="k" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="jToggleButton25" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                   <Component id="l" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jToggleButton26" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="enter" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                       <Component id="z" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="x" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
@@ -714,24 +710,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton25">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="33" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial" size="14" style="1"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="&lt;"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButton25ActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JToggleButton" name="jToggleButton26">
+    <Component class="javax.swing.JToggleButton" name="enter">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="33" red="33" type="rgb"/>
@@ -745,7 +724,7 @@
         <Property name="text" type="java.lang.String" value="ENTER"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButton26ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="enterActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JToggleButton" name="p">
