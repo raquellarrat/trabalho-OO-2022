@@ -13,6 +13,36 @@ public class TelaDeJogo extends javax.swing.JFrame {
     /**
      * Creates new form TelaDeJogo
      */
+    
+    boolean bloco1Selecionado = false;
+    boolean bloco2Selecionado = false;
+    boolean bloco3Selecionado = false;
+    boolean bloco4Selecionado = false;
+    boolean bloco5Selecionado = false;
+    boolean bloco6Selecionado = false;
+    boolean bloco7Selecionado = false;
+    boolean bloco8Selecionado = false;
+    boolean bloco9Selecionado = false;
+    boolean bloco10Selecionado = false;
+    boolean bloco11Selecionado = false;
+    boolean bloco12Selecionado = false;
+    boolean bloco13Selecionado = false;
+    boolean bloco14Selecionado = false;
+    boolean bloco15Selecionado = false;
+    boolean bloco16Selecionado = false;
+    boolean bloco17Selecionado = false;
+    boolean bloco18Selecionado = false;
+    boolean bloco19Selecionado = false;
+    boolean bloco20Selecionado = false;
+    boolean bloco21Selecionado = false;
+    boolean bloco22Selecionado = false;
+    boolean bloco23Selecionado = false;
+    boolean bloco24Selecionado = false;
+    boolean bloco25Selecionado = false;
+    
+    
+    
+    private javax.swing.JTextField aux;
     public TelaDeJogo() {
         initComponents();
     }
@@ -27,36 +57,6 @@ public class TelaDeJogo extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        bloco1 = new javax.swing.JTextField();
-        bloco2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
-        jTextField19 = new javax.swing.JTextField();
-        jTextField20 = new javax.swing.JTextField();
-        jTextField21 = new javax.swing.JTextField();
-        jTextField22 = new javax.swing.JTextField();
-        jTextField23 = new javax.swing.JTextField();
-        jTextField24 = new javax.swing.JTextField();
-        jTextField25 = new javax.swing.JTextField();
-        jTextField26 = new javax.swing.JTextField();
-        jTextField27 = new javax.swing.JTextField();
-        jTextField28 = new javax.swing.JTextField();
-        jTextField29 = new javax.swing.JTextField();
-        jTextField30 = new javax.swing.JTextField();
         q = new javax.swing.JToggleButton();
         w = new javax.swing.JToggleButton();
         jToggleButton3 = new javax.swing.JToggleButton();
@@ -85,137 +85,47 @@ public class TelaDeJogo extends javax.swing.JFrame {
         jToggleButton26 = new javax.swing.JToggleButton();
         jToggleButton27 = new javax.swing.JToggleButton();
         jToggleButton28 = new javax.swing.JToggleButton();
+        botao1 = new javax.swing.JToggleButton();
+        botao2 = new javax.swing.JToggleButton();
+        botao3 = new javax.swing.JToggleButton();
+        botao4 = new javax.swing.JToggleButton();
+        botao5 = new javax.swing.JToggleButton();
+        jToggleButton32 = new javax.swing.JToggleButton();
+        jToggleButton33 = new javax.swing.JToggleButton();
+        jToggleButton34 = new javax.swing.JToggleButton();
+        jToggleButton35 = new javax.swing.JToggleButton();
+        jToggleButton36 = new javax.swing.JToggleButton();
+        jToggleButton37 = new javax.swing.JToggleButton();
+        jToggleButton38 = new javax.swing.JToggleButton();
+        jToggleButton39 = new javax.swing.JToggleButton();
+        jToggleButton40 = new javax.swing.JToggleButton();
+        jToggleButton41 = new javax.swing.JToggleButton();
+        jToggleButton42 = new javax.swing.JToggleButton();
+        jToggleButton43 = new javax.swing.JToggleButton();
+        jToggleButton44 = new javax.swing.JToggleButton();
+        jToggleButton45 = new javax.swing.JToggleButton();
+        jToggleButton46 = new javax.swing.JToggleButton();
+        jToggleButton47 = new javax.swing.JToggleButton();
+        jToggleButton48 = new javax.swing.JToggleButton();
+        jToggleButton49 = new javax.swing.JToggleButton();
+        jToggleButton50 = new javax.swing.JToggleButton();
+        jToggleButton51 = new javax.swing.JToggleButton();
+        jToggleButton52 = new javax.swing.JToggleButton();
+        jToggleButton53 = new javax.swing.JToggleButton();
+        jToggleButton54 = new javax.swing.JToggleButton();
+        jToggleButton55 = new javax.swing.JToggleButton();
+        jToggleButton56 = new javax.swing.JToggleButton();
+        jToggleButton57 = new javax.swing.JToggleButton();
+        jToggleButton58 = new javax.swing.JToggleButton();
+        jToggleButton59 = new javax.swing.JToggleButton();
+        jToggleButton60 = new javax.swing.JToggleButton();
+        jToggleButton61 = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setBackground(new java.awt.Color(255, 0, 153));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 48)); // NOI18N
         jLabel1.setText("   Find Word");
-
-        bloco1.setBackground(new java.awt.Color(102, 102, 102));
-        bloco1.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        bloco1.setForeground(new java.awt.Color(255, 255, 255));
-        bloco1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bloco1ActionPerformed(evt);
-            }
-        });
-
-        bloco2.setBackground(new java.awt.Color(102, 102, 102));
-        bloco2.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        bloco2.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField3.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField3.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField4.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField4.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField5.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField5.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField5.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField6.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField6.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField6.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField7.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField7.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField7.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField8.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField8.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField8.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField9.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField9.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField9.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField10.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField10.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField10.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField11.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField11.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField11.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField12.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField12.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField12.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField13.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField13.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField13.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField14.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField14.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField14.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField15.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField15.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField15.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField16.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField16.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField16.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField17.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField17.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField17.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField18.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField18.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField18.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField19.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField19.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField19.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField20.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField20.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField20.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField21.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField21.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField21.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField22.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField22.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField22.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField23.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField23.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField23.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField24.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField24.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField24.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField25.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField25.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField25.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField26.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField26.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField26.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField27.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField27.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField27.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField28.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField28.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField28.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField29.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField29.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField29.setForeground(new java.awt.Color(255, 255, 255));
-
-        jTextField30.setBackground(new java.awt.Color(102, 102, 102));
-        jTextField30.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        jTextField30.setForeground(new java.awt.Color(255, 255, 255));
 
         q.setBackground(new java.awt.Color(51, 51, 51));
         q.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -392,6 +302,136 @@ public class TelaDeJogo extends javax.swing.JFrame {
             }
         });
 
+        botao1.setBackground(new java.awt.Color(153, 153, 153));
+        botao1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        botao1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao1ActionPerformed(evt);
+            }
+        });
+
+        botao2.setBackground(new java.awt.Color(153, 153, 153));
+        botao2.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        botao2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao2ActionPerformed(evt);
+            }
+        });
+
+        botao3.setBackground(new java.awt.Color(153, 153, 153));
+        botao3.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+        botao3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao3ActionPerformed(evt);
+            }
+        });
+
+        botao4.setBackground(new java.awt.Color(153, 153, 153));
+        botao4.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+        botao4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao4ActionPerformed(evt);
+            }
+        });
+
+        botao5.setBackground(new java.awt.Color(153, 153, 153));
+        botao5.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+        botao5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botao5ActionPerformed(evt);
+            }
+        });
+
+        jToggleButton32.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton32.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton33.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton33.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton34.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton34.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton35.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton35.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton36.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton36.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton37.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton37.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton38.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton38.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton39.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton39.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton40.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton40.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton41.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton41.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton42.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton42.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton43.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton43.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton44.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton44.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton45.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton45.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton46.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton46.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton47.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton47.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton48.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton48.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton49.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton49.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton50.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton50.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton51.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton51.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton52.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton52.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton53.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton53.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton54.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton54.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton55.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton55.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton56.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton56.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton57.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton57.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton58.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton58.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton59.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton59.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton60.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton60.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
+        jToggleButton61.setBackground(new java.awt.Color(153, 153, 153));
+        jToggleButton61.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -399,28 +439,84 @@ public class TelaDeJogo extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
+                        .addGap(101, 101, 101)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(113, 113, 113)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jToggleButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton34, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(botao2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(botao3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(botao4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(botao5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jToggleButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton37, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton38, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jToggleButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton44, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jToggleButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton47, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton51, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton50, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton49, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jToggleButton56, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton55, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton52, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jToggleButton59, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton57, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton58, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(w, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jToggleButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jToggleButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jToggleButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jToggleButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jToggleButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jToggleButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jToggleButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jToggleButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -461,123 +557,83 @@ public class TelaDeJogo extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jToggleButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jToggleButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(28, 28, 28)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(bloco1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(bloco2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                .addContainerGap(62, Short.MAX_VALUE))
+                                        .addComponent(jToggleButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(w, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jToggleButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jToggleButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jToggleButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jToggleButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jToggleButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jToggleButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jToggleButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jToggleButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(71, 71, 71)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bloco1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bloco2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jToggleButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton34, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jToggleButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton37, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton38, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jToggleButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton44, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jToggleButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton47, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton51, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton50, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton49, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jToggleButton56, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton55, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton52, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jToggleButton59, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton57, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton60, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButton58, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -613,7 +669,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
                         .addComponent(jToggleButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jToggleButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jToggleButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(106, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         pack();
@@ -639,28 +695,53 @@ public class TelaDeJogo extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton28ActionPerformed
 
-    private void bloco1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bloco1ActionPerformed
-        // TODO add your handling code here:
-        bloco1.setText(q.getText());
-        
-        
-        
-    }//GEN-LAST:event_bloco1ActionPerformed
-
     private void qActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qActionPerformed
         // TODO add your handling code here:
-        //bloco1.getText().length() == 0
-        bloco1.setText(q.getText());
+        if(bloco1Selecionado == true){
+            //botaoTeste.setText(q.getText());
+            botao1.setText(q.getText());
+            bloco1Selecionado = false;
+        }
+        if(bloco2Selecionado == true){
+            //botaoTeste.setText(q.getText());
+            botao2.setText(q.getText());
+            bloco2Selecionado = false;
+        }
+        
+        
         
     }//GEN-LAST:event_qActionPerformed
 
     private void wActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wActionPerformed
         // TODO add your handling code here:
-        if(bloco1.getText().length() == 0){
-            bloco1.setText(w.getText());
-        }
+       
         
     }//GEN-LAST:event_wActionPerformed
+
+    private void botao1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao1ActionPerformed
+        // TODO add your handling code here:
+        bloco1Selecionado = true;
+    }//GEN-LAST:event_botao1ActionPerformed
+
+    private void botao2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao2ActionPerformed
+        // TODO add your handling code here:
+        bloco2Selecionado = true;
+    }//GEN-LAST:event_botao2ActionPerformed
+
+    private void botao3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao3ActionPerformed
+        // TODO add your handling code here:
+        bloco3Selecionado = true;
+    }//GEN-LAST:event_botao3ActionPerformed
+
+    private void botao4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao4ActionPerformed
+        // TODO add your handling code here:
+        bloco4Selecionado = true;
+    }//GEN-LAST:event_botao4ActionPerformed
+
+    private void botao5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botao5ActionPerformed
+        // TODO add your handling code here:
+        bloco5Selecionado = true;
+    }//GEN-LAST:event_botao5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -698,37 +779,12 @@ public class TelaDeJogo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField bloco1;
-    private javax.swing.JTextField bloco2;
+    private javax.swing.JToggleButton botao1;
+    private javax.swing.JToggleButton botao2;
+    private javax.swing.JToggleButton botao3;
+    private javax.swing.JToggleButton botao4;
+    private javax.swing.JToggleButton botao5;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     private javax.swing.JToggleButton jToggleButton10;
     private javax.swing.JToggleButton jToggleButton11;
     private javax.swing.JToggleButton jToggleButton12;
@@ -749,9 +805,39 @@ public class TelaDeJogo extends javax.swing.JFrame {
     private javax.swing.JToggleButton jToggleButton27;
     private javax.swing.JToggleButton jToggleButton28;
     private javax.swing.JToggleButton jToggleButton3;
+    private javax.swing.JToggleButton jToggleButton32;
+    private javax.swing.JToggleButton jToggleButton33;
+    private javax.swing.JToggleButton jToggleButton34;
+    private javax.swing.JToggleButton jToggleButton35;
+    private javax.swing.JToggleButton jToggleButton36;
+    private javax.swing.JToggleButton jToggleButton37;
+    private javax.swing.JToggleButton jToggleButton38;
+    private javax.swing.JToggleButton jToggleButton39;
     private javax.swing.JToggleButton jToggleButton4;
+    private javax.swing.JToggleButton jToggleButton40;
+    private javax.swing.JToggleButton jToggleButton41;
+    private javax.swing.JToggleButton jToggleButton42;
+    private javax.swing.JToggleButton jToggleButton43;
+    private javax.swing.JToggleButton jToggleButton44;
+    private javax.swing.JToggleButton jToggleButton45;
+    private javax.swing.JToggleButton jToggleButton46;
+    private javax.swing.JToggleButton jToggleButton47;
+    private javax.swing.JToggleButton jToggleButton48;
+    private javax.swing.JToggleButton jToggleButton49;
     private javax.swing.JToggleButton jToggleButton5;
+    private javax.swing.JToggleButton jToggleButton50;
+    private javax.swing.JToggleButton jToggleButton51;
+    private javax.swing.JToggleButton jToggleButton52;
+    private javax.swing.JToggleButton jToggleButton53;
+    private javax.swing.JToggleButton jToggleButton54;
+    private javax.swing.JToggleButton jToggleButton55;
+    private javax.swing.JToggleButton jToggleButton56;
+    private javax.swing.JToggleButton jToggleButton57;
+    private javax.swing.JToggleButton jToggleButton58;
+    private javax.swing.JToggleButton jToggleButton59;
     private javax.swing.JToggleButton jToggleButton6;
+    private javax.swing.JToggleButton jToggleButton60;
+    private javax.swing.JToggleButton jToggleButton61;
     private javax.swing.JToggleButton jToggleButton7;
     private javax.swing.JToggleButton jToggleButton8;
     private javax.swing.JToggleButton jToggleButton9;
