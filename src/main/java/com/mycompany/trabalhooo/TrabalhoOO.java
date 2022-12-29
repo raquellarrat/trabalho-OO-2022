@@ -22,6 +22,6 @@ public class TrabalhoOO {
         Jogo jogo2 = new Jogo("nubia");
         Jogo jogo3 = new Jogo("henrique");
         //jogo.jogar();
-        jogo.JogarInterface();
+        //jogo.JogarInterface();
     }
 }

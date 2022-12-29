@@ -4,6 +4,8 @@
  */
 package com.mycompany.trabalhooo;
 
+
+
 /**
  *
  * @author raque
@@ -13,6 +15,8 @@ public class TelaDeJogo extends javax.swing.JFrame {
     /**
      * Creates new form TelaDeJogo
      */
+    
+    
     
     boolean bloco1Selecionado = false;
     boolean bloco2Selecionado = false;
@@ -53,7 +57,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
     
     
     
-    private javax.swing.JTextField aux;
+   
     public TelaDeJogo() {
         initComponents();
     }
@@ -4908,6 +4912,8 @@ public class TelaDeJogo extends javax.swing.JFrame {
             }
         });
     }
+    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton a;
