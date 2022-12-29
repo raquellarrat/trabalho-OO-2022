@@ -18,7 +18,9 @@ package com.mycompany.trabalhooo;
 public class TrabalhoOO {
 
     public static void main(String[] args) {
-        Jogo jogo = new Jogo();
-        jogo.jogar();
+        Jogo jogo = new Jogo("josefina");
+        Jogo jogo2 = new Jogo("nubia");
+        Jogo jogo3 = new Jogo("henrique");
+        //jogo.jogar();
     }
 }

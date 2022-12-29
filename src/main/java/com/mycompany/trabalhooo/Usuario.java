@@ -4,7 +4,9 @@
  */
 package com.mycompany.trabalhooo;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 /**
@@ -17,13 +19,14 @@ public abstract class Usuario {
     String email;
     String senha;
     File historico;
+    private int fase;
 
     public Usuario(String email, String senha, String apelidoUsuario) {
         this.apelidoUsuario = apelidoUsuario;
         this.email = email;
         this.senha = senha;
 
-        File arquivo = new File(apelidoUsuario + ".txt");
+        File arquivo = new File("src/main/java/com/mycompany/trabalhooo/Historico/" + apelidoUsuario +".txt");
         try {
             arquivo.createNewFile();
             System.out.println("Usuario criado com sucesso!");
@@ -31,6 +34,27 @@ public abstract class Usuario {
             e.printStackTrace();
         }
         this.historico = arquivo;
+        try{
+            BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Usuarios.txt",true));
+            String linha = this.apelidoUsuario;
+            buffWrite.append(linha + "\n");
+            buffWrite.close();
+        }catch(IOException e){
+            System.out.println("Erro ao gravar usuario");
+        }
+	
+    }
+
+    public int getFase() {
+        return fase;
+    }
+
+    public void setFase(int fase) {
+        this.fase = fase;
+    }
+
+    public String getApelidoUsuario() {
+        return apelidoUsuario;
     }
 
     public abstract void gerenciarPalavras(); /// adicionar palavras no jogo;

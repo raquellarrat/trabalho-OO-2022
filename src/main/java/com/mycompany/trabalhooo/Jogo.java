@@ -20,7 +20,33 @@ public class Jogo {
     int numero;
     int vidas = 5;
     String palavraSecreta;
-    List<Palavra> listaPalavras = new ArrayList<Palavra>();  /// lista que será preenchida com as palavras tentativa do jogador
+    List<Palavra> listaPalavras = new ArrayList<>();  /// lista que será preenchida com as palavras tentativa do jogador
+    private List<Usuario> usuarios = new ArrayList<>();
+    Usuario usuarioAtual;
+    
+    public Jogo(String nomeUsuario){
+        configuracaoInicial(nomeUsuario);
+    } 
+    
+    private void configuracaoInicial(String nomeUsuario){
+        String path = "src/main/java/com/mycompany/trabalhooo/Historico/" + nomeUsuario +".txt";
+        try{
+            BufferedReader checarUsuario = new BufferedReader(new FileReader(path));
+            String linha = checarUsuario.readLine();
+            checarUsuario.close();
+        }catch (IOException e){
+            System.out.println("Usuario nao existe");
+            Usuario novo = new Jogador("email","senha",nomeUsuario);
+        }
+    }
+    
+    private int obterIndiceUsuario(String usuario){
+        for(int i = 0; i < usuarios.size(); i ++){
+            if(usuarios.get(i).getApelidoUsuario().equals(usuario))
+                return i;
+        }
+        return -1;
+    }
     
     public void jogar(){
         try{
@@ -39,8 +65,7 @@ public class Jogo {
                 System.out.println("Parabéns, você acertou! A palavra secreta é " + palavraSecreta + "!");
                 return;
             }
-                Palavra palavra = new Palavra();
-                palavra.transforma(tentativa);
+                Palavra palavra = new Palavra(tentativa);
                 palavra.setCores(palavraSecreta);
                 listaPalavras.add(palavra);
                 imprimirTela(palavra);
