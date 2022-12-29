@@ -112,6 +112,7 @@ public class Jogo {
     
     public void JogarInterface(){
         TelaDeJogo tela = new TelaDeJogo();
+        tela.setVisible(true);
     }
     
 }

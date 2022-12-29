@@ -138,7 +138,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         jLabel1.setText("   Find Word");
 
         q.setBackground(new java.awt.Color(51, 51, 51));
-        q.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        q.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         q.setForeground(new java.awt.Color(255, 255, 255));
         q.setText("Q");
         q.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +148,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         w.setBackground(new java.awt.Color(51, 51, 51));
-        w.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        w.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         w.setForeground(new java.awt.Color(255, 255, 255));
         w.setText("W");
         w.addActionListener(new java.awt.event.ActionListener() {
@@ -158,7 +158,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         e.setBackground(new java.awt.Color(51, 51, 51));
-        e.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        e.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         e.setForeground(new java.awt.Color(255, 255, 255));
         e.setText("E");
         e.addActionListener(new java.awt.event.ActionListener() {
@@ -168,7 +168,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         r.setBackground(new java.awt.Color(51, 51, 51));
-        r.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        r.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         r.setForeground(new java.awt.Color(255, 255, 255));
         r.setText("R");
         r.addActionListener(new java.awt.event.ActionListener() {
@@ -178,7 +178,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         t.setBackground(new java.awt.Color(51, 51, 51));
-        t.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        t.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         t.setForeground(new java.awt.Color(255, 255, 255));
         t.setText("T");
         t.addActionListener(new java.awt.event.ActionListener() {
@@ -188,7 +188,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         y.setBackground(new java.awt.Color(51, 51, 51));
-        y.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        y.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         y.setForeground(new java.awt.Color(255, 255, 255));
         y.setText("Y");
         y.addActionListener(new java.awt.event.ActionListener() {
@@ -198,7 +198,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         u.setBackground(new java.awt.Color(51, 51, 51));
-        u.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        u.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         u.setForeground(new java.awt.Color(255, 255, 255));
         u.setText("U");
         u.addActionListener(new java.awt.event.ActionListener() {
@@ -208,7 +208,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         i.setBackground(new java.awt.Color(51, 51, 51));
-        i.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        i.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         i.setForeground(new java.awt.Color(255, 255, 255));
         i.setText("I");
         i.addActionListener(new java.awt.event.ActionListener() {
@@ -218,7 +218,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         o.setBackground(new java.awt.Color(51, 51, 51));
-        o.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        o.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         o.setForeground(new java.awt.Color(255, 255, 255));
         o.setText("O");
         o.addActionListener(new java.awt.event.ActionListener() {
@@ -228,7 +228,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         a.setBackground(new java.awt.Color(51, 51, 51));
-        a.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        a.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         a.setForeground(new java.awt.Color(255, 255, 255));
         a.setText("A");
         a.addActionListener(new java.awt.event.ActionListener() {
@@ -238,7 +238,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         s.setBackground(new java.awt.Color(51, 51, 51));
-        s.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        s.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         s.setForeground(new java.awt.Color(255, 255, 255));
         s.setText("S");
         s.addActionListener(new java.awt.event.ActionListener() {
@@ -248,7 +248,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         d.setBackground(new java.awt.Color(51, 51, 51));
-        d.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        d.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         d.setForeground(new java.awt.Color(255, 255, 255));
         d.setText("D");
         d.addActionListener(new java.awt.event.ActionListener() {
@@ -258,7 +258,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         f.setBackground(new java.awt.Color(51, 51, 51));
-        f.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        f.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         f.setForeground(new java.awt.Color(255, 255, 255));
         f.setText("F");
         f.addActionListener(new java.awt.event.ActionListener() {
@@ -268,7 +268,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         g.setBackground(new java.awt.Color(51, 51, 51));
-        g.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        g.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         g.setForeground(new java.awt.Color(255, 255, 255));
         g.setText("G");
         g.addActionListener(new java.awt.event.ActionListener() {
@@ -278,7 +278,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         h.setBackground(new java.awt.Color(51, 51, 51));
-        h.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        h.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         h.setForeground(new java.awt.Color(255, 255, 255));
         h.setText("H");
         h.addActionListener(new java.awt.event.ActionListener() {
@@ -288,7 +288,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         j.setBackground(new java.awt.Color(51, 51, 51));
-        j.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        j.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         j.setForeground(new java.awt.Color(255, 255, 255));
         j.setText("J");
         j.addActionListener(new java.awt.event.ActionListener() {
@@ -298,7 +298,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         k.setBackground(new java.awt.Color(51, 51, 51));
-        k.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        k.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         k.setForeground(new java.awt.Color(255, 255, 255));
         k.setText("K");
         k.addActionListener(new java.awt.event.ActionListener() {
@@ -308,7 +308,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         z.setBackground(new java.awt.Color(51, 51, 51));
-        z.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        z.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         z.setForeground(new java.awt.Color(255, 255, 255));
         z.setText("Z");
         z.addActionListener(new java.awt.event.ActionListener() {
@@ -318,7 +318,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         x.setBackground(new java.awt.Color(51, 51, 51));
-        x.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        x.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         x.setForeground(new java.awt.Color(255, 255, 255));
         x.setText("X");
         x.addActionListener(new java.awt.event.ActionListener() {
@@ -328,7 +328,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         c.setBackground(new java.awt.Color(51, 51, 51));
-        c.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        c.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         c.setForeground(new java.awt.Color(255, 255, 255));
         c.setText("C");
         c.addActionListener(new java.awt.event.ActionListener() {
@@ -338,7 +338,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         v.setBackground(new java.awt.Color(51, 51, 51));
-        v.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        v.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         v.setForeground(new java.awt.Color(255, 255, 255));
         v.setText("V");
         v.addActionListener(new java.awt.event.ActionListener() {
@@ -348,7 +348,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         b.setBackground(new java.awt.Color(51, 51, 51));
-        b.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        b.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         b.setForeground(new java.awt.Color(255, 255, 255));
         b.setText("B");
         b.addActionListener(new java.awt.event.ActionListener() {
@@ -358,7 +358,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         n.setBackground(new java.awt.Color(51, 51, 51));
-        n.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        n.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         n.setForeground(new java.awt.Color(255, 255, 255));
         n.setText("N");
         n.addActionListener(new java.awt.event.ActionListener() {
@@ -368,7 +368,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         m.setBackground(new java.awt.Color(51, 51, 51));
-        m.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        m.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         m.setForeground(new java.awt.Color(255, 255, 255));
         m.setText("M");
         m.addActionListener(new java.awt.event.ActionListener() {
@@ -378,7 +378,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         enter.setBackground(new java.awt.Color(51, 51, 51));
-        enter.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        enter.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         enter.setForeground(new java.awt.Color(255, 255, 255));
         enter.setText("ENTER");
         enter.addActionListener(new java.awt.event.ActionListener() {
@@ -388,7 +388,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         p.setBackground(new java.awt.Color(51, 51, 51));
-        p.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        p.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         p.setForeground(new java.awt.Color(255, 255, 255));
         p.setText("P");
         p.addActionListener(new java.awt.event.ActionListener() {
@@ -398,7 +398,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         l.setBackground(new java.awt.Color(51, 51, 51));
-        l.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        l.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         l.setForeground(new java.awt.Color(255, 255, 255));
         l.setText("L");
         l.addActionListener(new java.awt.event.ActionListener() {
@@ -408,7 +408,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao1.setBackground(new java.awt.Color(153, 153, 153));
-        botao1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao1ActionPerformed(evt);
@@ -416,7 +416,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao2.setBackground(new java.awt.Color(153, 153, 153));
-        botao2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao2.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao2ActionPerformed(evt);
@@ -424,7 +424,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao3.setBackground(new java.awt.Color(153, 153, 153));
-        botao3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao3.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao3ActionPerformed(evt);
@@ -432,7 +432,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao4.setBackground(new java.awt.Color(153, 153, 153));
-        botao4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao4.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao4ActionPerformed(evt);
@@ -440,7 +440,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao5.setBackground(new java.awt.Color(153, 153, 153));
-        botao5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao5.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao5ActionPerformed(evt);
@@ -448,7 +448,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao6.setBackground(new java.awt.Color(153, 153, 153));
-        botao6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao6.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao6ActionPerformed(evt);
@@ -456,7 +456,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao7.setBackground(new java.awt.Color(153, 153, 153));
-        botao7.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao7.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao7ActionPerformed(evt);
@@ -464,7 +464,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao8.setBackground(new java.awt.Color(153, 153, 153));
-        botao8.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao8.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao8ActionPerformed(evt);
@@ -472,7 +472,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao9.setBackground(new java.awt.Color(153, 153, 153));
-        botao9.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao9.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao9ActionPerformed(evt);
@@ -480,7 +480,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao10.setBackground(new java.awt.Color(153, 153, 153));
-        botao10.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao10.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao10ActionPerformed(evt);
@@ -488,7 +488,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao12.setBackground(new java.awt.Color(153, 153, 153));
-        botao12.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao12.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao12ActionPerformed(evt);
@@ -496,7 +496,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao13.setBackground(new java.awt.Color(153, 153, 153));
-        botao13.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao13.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao13ActionPerformed(evt);
@@ -504,7 +504,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao14.setBackground(new java.awt.Color(153, 153, 153));
-        botao14.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao14.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao14ActionPerformed(evt);
@@ -512,7 +512,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao15.setBackground(new java.awt.Color(153, 153, 153));
-        botao15.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao15.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao15ActionPerformed(evt);
@@ -520,7 +520,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao11.setBackground(new java.awt.Color(153, 153, 153));
-        botao11.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao11.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao11ActionPerformed(evt);
@@ -528,7 +528,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao20.setBackground(new java.awt.Color(153, 153, 153));
-        botao20.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao20.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao20ActionPerformed(evt);
@@ -536,7 +536,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao18.setBackground(new java.awt.Color(153, 153, 153));
-        botao18.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao18.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao18ActionPerformed(evt);
@@ -544,7 +544,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao17.setBackground(new java.awt.Color(153, 153, 153));
-        botao17.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao17.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao17ActionPerformed(evt);
@@ -552,7 +552,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao19.setBackground(new java.awt.Color(153, 153, 153));
-        botao19.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao19.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao19ActionPerformed(evt);
@@ -560,7 +560,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao16.setBackground(new java.awt.Color(153, 153, 153));
-        botao16.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao16.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao16ActionPerformed(evt);
@@ -568,7 +568,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao22.setBackground(new java.awt.Color(153, 153, 153));
-        botao22.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao22.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao22ActionPerformed(evt);
@@ -576,7 +576,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao21.setBackground(new java.awt.Color(153, 153, 153));
-        botao21.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao21.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao21ActionPerformed(evt);
@@ -584,7 +584,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao25.setBackground(new java.awt.Color(153, 153, 153));
-        botao25.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao25.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao25ActionPerformed(evt);
@@ -592,7 +592,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao24.setBackground(new java.awt.Color(153, 153, 153));
-        botao24.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao24.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao24ActionPerformed(evt);
@@ -600,7 +600,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao23.setBackground(new java.awt.Color(153, 153, 153));
-        botao23.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao23.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao23ActionPerformed(evt);
@@ -608,7 +608,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao30.setBackground(new java.awt.Color(153, 153, 153));
-        botao30.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao30.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao30ActionPerformed(evt);
@@ -616,7 +616,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao29.setBackground(new java.awt.Color(153, 153, 153));
-        botao29.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao29.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao29ActionPerformed(evt);
@@ -624,7 +624,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao27.setBackground(new java.awt.Color(153, 153, 153));
-        botao27.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao27.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao27ActionPerformed(evt);
@@ -632,7 +632,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao28.setBackground(new java.awt.Color(153, 153, 153));
-        botao28.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao28.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao28ActionPerformed(evt);
@@ -640,7 +640,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao26.setBackground(new java.awt.Color(153, 153, 153));
-        botao26.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao26.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao26ActionPerformed(evt);
@@ -648,7 +648,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao33.setBackground(new java.awt.Color(153, 153, 153));
-        botao33.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao33.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao33ActionPerformed(evt);
@@ -656,7 +656,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao35.setBackground(new java.awt.Color(153, 153, 153));
-        botao35.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao35.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao35.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao35ActionPerformed(evt);
@@ -664,7 +664,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao31.setBackground(new java.awt.Color(153, 153, 153));
-        botao31.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao31.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao31ActionPerformed(evt);
@@ -672,7 +672,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao34.setBackground(new java.awt.Color(153, 153, 153));
-        botao34.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao34.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao34ActionPerformed(evt);
@@ -680,7 +680,7 @@ public class TelaDeJogo extends javax.swing.JFrame {
         });
 
         botao32.setBackground(new java.awt.Color(153, 153, 153));
-        botao32.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        botao32.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         botao32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botao32ActionPerformed(evt);
@@ -694,234 +694,232 @@ public class TelaDeJogo extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(101, 101, 101)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(177, 177, 177)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(botao6, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao7, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao8, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao9, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao10, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao4, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao5, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(botao11, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao12, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao13, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao14, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao15, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(botao16, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao17, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao18, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao19, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao20, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(botao21, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao22, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao23, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao24, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao25, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(botao26, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao27, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao28, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao29, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao30, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(botao31, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao32, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao33, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao34, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(botao35, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(113, 113, 113)
+                        .addGap(41, 41, 41)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(botao6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao10, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(botao11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao12, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao14, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(botao16, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao17, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao18, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao19, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao20, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(botao21, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao22, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao23, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao24, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao25, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(botao26, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao27, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao28, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao29, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao30, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(botao31, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao32, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao33, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao34, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(botao35, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(14, 14, 14)
-                                        .addComponent(a, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(s, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(d, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(f, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(g, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(h, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(j, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(k, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(32, 32, 32)
-                                        .addComponent(z, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(z, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(x, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(x, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(c, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(c, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(v, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(v, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(b, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(b, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(n, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(n, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(m, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(m, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(14, 14, 14)
+                                        .addComponent(a, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(s, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(d, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(f, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(g, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(h, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(j, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(k, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(enter, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(l, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(enter, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(l, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(w, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(w, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(e, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(e, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(r, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(r, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(t, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(t, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(y, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(y, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(u, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(u, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(i, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(i, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(o, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(o, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(27, 27, 27)))
-                .addContainerGap(66, Short.MAX_VALUE))
+                                .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(71, 71, 71)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botao6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao10, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botao11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao12, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao14, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botao16, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao17, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao18, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao19, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao20, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botao21, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao22, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao23, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao24, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao25, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botao26, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao27, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao28, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao29, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao30, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botao31, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao32, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao33, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao34, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botao35, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(w, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(e, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(r, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(t, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(y, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(u, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(i, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(o, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(a, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(s, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(d, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(f, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(g, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(h, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(k, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(l, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(enter, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao4, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao5, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botao6, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao7, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao8, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao9, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao10, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botao11, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao12, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao13, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao14, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao15, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botao16, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao17, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao18, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao19, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao20, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botao21, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao22, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao23, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao24, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao25, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botao26, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao27, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao28, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao29, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao30, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botao31, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao32, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao33, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao34, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botao35, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(w, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(e, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(r, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(t, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(y, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(u, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(i, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(o, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(a, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(s, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(d, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(f, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(g, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(h, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(j, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(k, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(l, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(enter, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(z, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(x, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(c, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(v, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(b, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(n, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(m, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                        .addComponent(z, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(x, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(c, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(v, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(b, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(n, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(m, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
