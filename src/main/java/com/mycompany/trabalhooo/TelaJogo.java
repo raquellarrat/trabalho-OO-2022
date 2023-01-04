@@ -206,6 +206,76 @@ public class TelaJogo extends javax.swing.JFrame {
             }
         }
     }
+    public void verificaTentativa3(String palavraSecreta) {
+        if (botao11.getText().length() == 1
+                && botao12.getText().length() == 1
+                && botao13.getText().length() == 1
+                && botao14.getText().length() == 1
+                && botao15.getText().length() == 1) {
+            String tentativa = botao11.getText() + botao12.getText() + botao13.getText() + botao14.getText() + botao15.getText();
+            System.out.println(tentativa);
+            if (tentativa.equals(palavraSecreta)) {
+                //// exibir tela de vitoria
+                ///fechar telade jogo
+            }
+            Palavra palavra = new Palavra(tentativa);
+            System.out.println(palavra.letras.get(0).getChar());
+            palavra.setCores(palavraSecreta);
+            int cor = palavra.letras.get(0).getCor();
+            System.out.println(cor);
+            if (cor == 1) {
+                botao11.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao11.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao11.setBackground(Color.gray);
+            }
+            cor = palavra.letras.get(1).getCor();
+            if (cor == 1) {
+                botao12.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao12.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao12.setBackground(Color.gray);
+            }
+            cor = palavra.letras.get(2).getCor();
+            if (cor == 1) {
+                botao13.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao13.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao13.setBackground(Color.gray);
+            }
+
+            cor = palavra.letras.get(3).getCor();
+            if (cor == 1) {
+                botao14.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao14.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao14.setBackground(Color.gray);
+            }
+
+            cor = palavra.letras.get(4).getCor();
+            if (cor == 1) {
+                botao15.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao15.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao15.setBackground(Color.gray);
+            }
+        }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -1007,7 +1077,7 @@ public class TelaJogo extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(49, Short.MAX_VALUE)
+                .addContainerGap(61, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(botao1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1052,7 +1122,6 @@ public class TelaJogo extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(botao21, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botao22, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4499,6 +4568,7 @@ public class TelaJogo extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        verificaTentativa3(this.palavraSecreta);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
