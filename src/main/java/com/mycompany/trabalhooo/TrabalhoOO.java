@@ -23,5 +23,9 @@ public class TrabalhoOO {
         Jogo jogo3 = new Jogo("henrique");
         //jogo.jogar();
         //jogo.JogarInterface();
+        //TelaDeJogo tela = new TelaDeJogo();
+        //tela.setVisible(true);
+        TelaJogo tela = new TelaJogo();
+        tela.Jogar();
     }
 }

@@ -19,7 +19,7 @@ public class Jogo {
     List<String> palavras = new ArrayList<>();
     int numero;
     int vidas = 5;
-    String palavraSecreta;
+    public String palavraSecreta;
     List<Palavra> listaPalavras = new ArrayList<>();  /// lista que será preenchida com as palavras tentativa do jogador
     private List<Usuario> usuarios = new ArrayList<>();
     Usuario usuarioAtual;
@@ -84,7 +84,7 @@ public class Jogo {
         }   
         
     }
-    private String sorteiaPalavraSecreta() throws IOException {
+    public String sorteiaPalavraSecreta() throws IOException {
         String path = "src/main/java/com/mycompany/trabalhooo/Arquivos/5Letras.txt";
         BufferedReader buffRead = new BufferedReader(new FileReader(path));
         String linha = "";
@@ -105,17 +105,12 @@ public class Jogo {
         return palavraAleatoria;
     }
     
-    
-    
-    
-    ////////////////// Testando criação de função pra jogar pela interface
-    
-    public void JogarInterface(){
-        TelaDeJogo tela = new TelaDeJogo();
-        tela.setVisible(true);
-    }
-    
 }
+    
+    
+    
+    
+
 
 
 
