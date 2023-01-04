@@ -6,6 +6,7 @@ package com.mycompany.trabalhooo;
 
 import java.awt.Color;
 import java.io.IOException;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -63,6 +64,12 @@ public class TelaJogo extends javax.swing.JFrame {
         }
         System.out.println(this.palavraSecreta);
         this.setVisible(true);
+        
+        jButton3.setVisible(false);
+        jButton4.setVisible(false);
+        jButton5.setVisible(false);
+        jButton6.setVisible(false);
+        jButton8.setVisible(false);
     }
 
     public void verificaTentativa1(String palavraSecreta) {
@@ -75,6 +82,14 @@ public class TelaJogo extends javax.swing.JFrame {
             System.out.println(tentativa);
             if (tentativa.equals(palavraSecreta)) {
                 //// exibir tela de vitoria
+                
+                botao1.setBackground(Color.green);
+                botao2.setBackground(Color.green);
+                botao3.setBackground(Color.green);
+                botao4.setBackground(Color.green);
+                botao5.setBackground(Color.green);
+                String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
+                JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
             Palavra palavra = new Palavra(tentativa);
@@ -133,9 +148,17 @@ public class TelaJogo extends javax.swing.JFrame {
             if (cor == 3) {
                 botao5.setBackground(Color.gray);
             }
+            jButton3.setVisible(true);
+            jButton1.setVisible(false);
+            
+            botao1.setEnabled(false);
+            botao2.setEnabled(false);
+            botao3.setEnabled(false);
+            botao4.setEnabled(false);
+            botao5.setEnabled(false);
         }
     }
-    
+
     public void verificaTentativa2(String palavraSecreta) {
         if (botao6.getText().length() == 1
                 && botao7.getText().length() == 1
@@ -145,8 +168,18 @@ public class TelaJogo extends javax.swing.JFrame {
             String tentativa = botao6.getText() + botao7.getText() + botao8.getText() + botao9.getText() + botao10.getText();
             System.out.println(tentativa);
             if (tentativa.equals(palavraSecreta)) {
-                //// exibir tela de vitoria
+
+                
+                botao6.setBackground(Color.green);
+                botao7.setBackground(Color.green);
+                botao8.setBackground(Color.green);
+                botao9.setBackground(Color.green);
+                botao10.setBackground(Color.green);
+                
+                String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
+                JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
+                //contabilizar pontos do jogador
             }
             Palavra palavra = new Palavra(tentativa);
             System.out.println(palavra.letras.get(0).getChar());
@@ -204,8 +237,18 @@ public class TelaJogo extends javax.swing.JFrame {
             if (cor == 3) {
                 botao10.setBackground(Color.gray);
             }
+            
+            jButton3.setVisible(false);
+            jButton4.setVisible(true);
+            
+            botao6.setEnabled(false);
+            botao7.setEnabled(false);
+            botao8.setEnabled(false);
+            botao9.setEnabled(false);
+            botao10.setEnabled(false);
         }
     }
+
     public void verificaTentativa3(String palavraSecreta) {
         if (botao11.getText().length() == 1
                 && botao12.getText().length() == 1
@@ -215,7 +258,15 @@ public class TelaJogo extends javax.swing.JFrame {
             String tentativa = botao11.getText() + botao12.getText() + botao13.getText() + botao14.getText() + botao15.getText();
             System.out.println(tentativa);
             if (tentativa.equals(palavraSecreta)) {
-                //// exibir tela de vitoria
+                
+                botao11.setBackground(Color.green);
+                botao12.setBackground(Color.green);
+                botao13.setBackground(Color.green);
+                botao14.setBackground(Color.green);
+                botao15.setBackground(Color.green);
+                
+                String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
+                JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
             Palavra palavra = new Palavra(tentativa);
@@ -274,6 +325,276 @@ public class TelaJogo extends javax.swing.JFrame {
             if (cor == 3) {
                 botao15.setBackground(Color.gray);
             }
+            jButton5.setVisible(true);
+            jButton4.setVisible(false);
+            
+            botao11.setEnabled(false);
+            botao12.setEnabled(false);
+            botao13.setEnabled(false);
+            botao14.setEnabled(false);
+            botao15.setEnabled(false);
+        }
+    }
+
+    public void verificaTentativa4(String palavraSecreta) {
+        if (botao16.getText().length() == 1
+                && botao17.getText().length() == 1
+                && botao18.getText().length() == 1
+                && botao19.getText().length() == 1
+                && botao20.getText().length() == 1) {
+            String tentativa = botao16.getText() + botao17.getText() + botao18.getText() + botao19.getText() + botao20.getText();
+            System.out.println(tentativa);
+            if (tentativa.equals(palavraSecreta)) {
+                
+                botao16.setBackground(Color.green);
+                botao17.setBackground(Color.green);
+                botao18.setBackground(Color.green);
+                botao19.setBackground(Color.green);
+                botao20.setBackground(Color.green);
+                
+                String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
+                JOptionPane.showMessageDialog(null, mensagem);
+                ///fechar telade jogo
+            }
+            Palavra palavra = new Palavra(tentativa);
+            System.out.println(palavra.letras.get(0).getChar());
+            palavra.setCores(palavraSecreta);
+            int cor = palavra.letras.get(0).getCor();
+            System.out.println(cor);
+            if (cor == 1) {
+                botao16.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao16.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao16.setBackground(Color.gray);
+            }
+            cor = palavra.letras.get(1).getCor();
+            if (cor == 1) {
+                botao17.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao17.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao17.setBackground(Color.gray);
+            }
+            cor = palavra.letras.get(2).getCor();
+            if (cor == 1) {
+                botao18.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao18.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao18.setBackground(Color.gray);
+            }
+
+            cor = palavra.letras.get(3).getCor();
+            if (cor == 1) {
+                botao19.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao19.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao19.setBackground(Color.gray);
+            }
+
+            cor = palavra.letras.get(4).getCor();
+            if (cor == 1) {
+                botao20.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao20.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao20.setBackground(Color.gray);
+            }
+            jButton5.setVisible(false);
+            jButton6.setVisible(true);
+            
+            botao16.setEnabled(false);
+            botao17.setEnabled(false);
+            botao18.setEnabled(false);
+            botao19.setEnabled(false);
+            botao20.setEnabled(false);
+        }
+    }
+
+    public void verificaTentativa5(String palavraSecreta) {
+        if (botao21.getText().length() == 1
+                && botao22.getText().length() == 1
+                && botao23.getText().length() == 1
+                && botao24.getText().length() == 1
+                && botao25.getText().length() == 1) {
+            String tentativa = botao21.getText() + botao22.getText() + botao23.getText() + botao24.getText() + botao25.getText();
+            System.out.println(tentativa);
+            if (tentativa.equals(palavraSecreta)) {
+                
+                botao21.setBackground(Color.green);
+                botao22.setBackground(Color.green);
+                botao23.setBackground(Color.green);
+                botao24.setBackground(Color.green);
+                botao25.setBackground(Color.green);
+                
+                String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
+                JOptionPane.showMessageDialog(null, mensagem);
+                ///fechar telade jogo
+            }
+            Palavra palavra = new Palavra(tentativa);
+            System.out.println(palavra.letras.get(0).getChar());
+            palavra.setCores(palavraSecreta);
+            int cor = palavra.letras.get(0).getCor();
+            System.out.println(cor);
+            if (cor == 1) {
+                botao21.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao21.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao21.setBackground(Color.gray);
+            }
+            cor = palavra.letras.get(1).getCor();
+            if (cor == 1) {
+                botao22.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao22.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao22.setBackground(Color.gray);
+            }
+            cor = palavra.letras.get(2).getCor();
+            if (cor == 1) {
+                botao23.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao23.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao23.setBackground(Color.gray);
+            }
+
+            cor = palavra.letras.get(3).getCor();
+            if (cor == 1) {
+                botao24.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao24.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao24.setBackground(Color.gray);
+            }
+
+            cor = palavra.letras.get(4).getCor();
+            if (cor == 1) {
+                botao25.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao25.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao25.setBackground(Color.gray);
+            }
+            jButton8.setVisible(true);
+            jButton6.setVisible(false);
+            
+            botao21.setEnabled(false);
+            botao22.setEnabled(false);
+            botao23.setEnabled(false);
+            botao24.setEnabled(false);
+            botao25.setEnabled(false);
+        }
+    }
+
+    public void verificaTentativa6(String palavraSecreta) {
+        if (botao26.getText().length() == 1
+                && botao27.getText().length() == 1
+                && botao28.getText().length() == 1
+                && botao29.getText().length() == 1
+                && botao30.getText().length() == 1) {
+            String tentativa = botao26.getText() + botao27.getText() + botao28.getText() + botao29.getText() + botao30.getText();
+            System.out.println(tentativa);
+            if (tentativa.equals(palavraSecreta)) {
+                
+                botao26.setBackground(Color.green);
+                botao27.setBackground(Color.green);
+                botao28.setBackground(Color.green);
+                botao29.setBackground(Color.green);
+                botao30.setBackground(Color.green);
+                
+                String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
+                JOptionPane.showMessageDialog(null, mensagem);
+                ///fechar telade jogo
+            }
+            Palavra palavra = new Palavra(tentativa);
+            System.out.println(palavra.letras.get(0).getChar());
+            palavra.setCores(palavraSecreta);
+            int cor = palavra.letras.get(0).getCor();
+            System.out.println(cor);
+            if (cor == 1) {
+                botao26.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao26.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao26.setBackground(Color.gray);
+            }
+            cor = palavra.letras.get(1).getCor();
+            if (cor == 1) {
+                botao27.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao27.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao27.setBackground(Color.gray);
+            }
+            cor = palavra.letras.get(2).getCor();
+            if (cor == 1) {
+                botao28.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao28.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao28.setBackground(Color.gray);
+            }
+
+            cor = palavra.letras.get(3).getCor();
+            if (cor == 1) {
+                botao29.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao29.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao29.setBackground(Color.gray);
+            }
+
+            cor = palavra.letras.get(4).getCor();
+            if (cor == 1) {
+                botao30.setBackground(Color.green);
+            }
+            if (cor == 2) {
+                botao30.setBackground(Color.yellow);
+            }
+            if (cor == 3) {
+                botao30.setBackground(Color.gray);
+            }
+            
+            jButton8.setVisible(false);
+            
+            
+            botao21.setEnabled(false);
+            botao22.setEnabled(false);
+            botao23.setEnabled(false);
+            botao24.setEnabled(false);
+            botao25.setEnabled(false);
         }
     }
 
@@ -4573,14 +4894,17 @@ public class TelaJogo extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        verificaTentativa4(this.palavraSecreta);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
+        verificaTentativa5(this.palavraSecreta);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
+        verificaTentativa6(this.palavraSecreta);
     }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
