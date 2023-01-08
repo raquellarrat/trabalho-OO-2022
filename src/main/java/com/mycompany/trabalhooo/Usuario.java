@@ -33,6 +33,15 @@ public abstract class Usuario {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        try{
+            BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/" + apelidoUsuario +".txt",true));
+            buffWrite.append("TENTATIVA  ACERTO  ERRO  \n");
+            buffWrite.close();
+        }catch(IOException e){
+            System.out.println("Erro ao escrever no historico");
+        }
+        
+       
         this.historico = arquivo;
         try{
             BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Usuarios.txt",true));

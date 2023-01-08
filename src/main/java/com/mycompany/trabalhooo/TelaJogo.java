@@ -5,6 +5,10 @@
 package com.mycompany.trabalhooo;
 
 import java.awt.Color;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 
@@ -53,8 +57,11 @@ public class TelaJogo extends javax.swing.JFrame {
         initComponents();
     }
 
-    public void Jogar() {
-        Jogo jogo = new Jogo("henrique");
+    public void Jogar(String NomeJogador) {
+        
+        
+        
+        Jogo jogo = new Jogo(NomeJogador);
 
         try {
             jogo.palavraSecreta = jogo.sorteiaPalavraSecreta();
@@ -88,10 +95,31 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao3.setBackground(Color.green);
                 botao4.setBackground(Color.green);
                 botao5.setBackground(Color.green);
+                
+                 try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "1   1    0";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
+                
+                
+                
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
+                
+                try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "1   0   1";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
             Palavra palavra = new Palavra(tentativa);
             System.out.println(palavra.letras.get(0).getChar());
             palavra.setCores(palavraSecreta);
@@ -176,11 +204,31 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao9.setBackground(Color.green);
                 botao10.setBackground(Color.green);
                 
+                try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "2   1   0";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
+                
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
                 //contabilizar pontos do jogador
             }
+            
+            try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "2   1   0";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
+            
+            
             Palavra palavra = new Palavra(tentativa);
             System.out.println(palavra.letras.get(0).getChar());
             palavra.setCores(palavraSecreta);
@@ -265,10 +313,30 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao14.setBackground(Color.green);
                 botao15.setBackground(Color.green);
                 
+                
+                 try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "3   1   0 ";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
+            
+               try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "3   0   1 ";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
+               
+               
             Palavra palavra = new Palavra(tentativa);
             System.out.println(palavra.letras.get(0).getChar());
             palavra.setCores(palavraSecreta);
@@ -352,10 +420,28 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao19.setBackground(Color.green);
                 botao20.setBackground(Color.green);
                 
+                   try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "4   1   0 \n";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
+            
+               try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "4   0   1 ";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
+               
             Palavra palavra = new Palavra(tentativa);
             System.out.println(palavra.letras.get(0).getChar());
             palavra.setCores(palavraSecreta);
@@ -439,10 +525,31 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao24.setBackground(Color.green);
                 botao25.setBackground(Color.green);
                 
+                 try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "5   1   0 ";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
+                 
+                 
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
+            
+                try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "5   0   1 ";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
+            
+            
             Palavra palavra = new Palavra(tentativa);
             System.out.println(palavra.letras.get(0).getChar());
             palavra.setCores(palavraSecreta);
@@ -526,10 +633,30 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao29.setBackground(Color.green);
                 botao30.setBackground(Color.green);
                 
+                  try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "6   1   0 ";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
+                  
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
+            
+                try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    String linha = "6   0   1";
+                    buffWrite.append(linha + "\n");
+                    buffWrite.close();
+                } catch (IOException e) {
+                    System.out.println("Erro ao gravar usuario");
+                }
+             
+             
             Palavra palavra = new Palavra(tentativa);
             System.out.println(palavra.letras.get(0).getChar());
             palavra.setCores(palavraSecreta);

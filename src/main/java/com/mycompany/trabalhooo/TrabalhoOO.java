@@ -18,14 +18,16 @@ package com.mycompany.trabalhooo;
 public class TrabalhoOO {
 
     public static void main(String[] args) {
-        Jogo jogo = new Jogo("josefina");
-        Jogo jogo2 = new Jogo("nubia");
-        Jogo jogo3 = new Jogo("henrique");
+        //Jogo jogo = new Jogo("josefina");
+       // Jogo jogo2 = new Jogo("nubia");
+       // Jogo jogo3 = new Jogo("henrique");
+       //Jogo jogo4 = new Jogo("Larissa");
+
         //jogo.jogar();
         //jogo.JogarInterface();
         //TelaDeJogo tela = new TelaDeJogo();
         //tela.setVisible(true);
         TelaJogo tela = new TelaJogo();
-        tela.Jogar();
+        tela.Jogar("Larissa2");
     }
 }
