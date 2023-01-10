@@ -16,7 +16,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Jogo {
-    List<String> palavras = new ArrayList<>();
+    List<String> palavras;
     int numero;
     int vidas = 5;
     public String palavraSecreta;
@@ -101,8 +101,10 @@ public class Jogo {
         buffRead.close();
         String [] palavrasSeparadas = palavras.split(" ");
         Random random = new Random();
-        int indice = random.nextInt(palavrasSeparadas.length);
-        String palavraAleatoria = palavrasSeparadas[indice];
+        List lista = Arrays.asList(palavrasSeparadas);
+        this.palavras = new ArrayList(lista);
+        int indice = random.nextInt(this.palavras.size());
+        String palavraAleatoria = this.palavras.get(indice);
         return palavraAleatoria;
     }
     
