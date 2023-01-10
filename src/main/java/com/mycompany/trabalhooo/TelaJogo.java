@@ -49,7 +49,7 @@ public class TelaJogo extends javax.swing.JFrame {
     boolean bloco28Selecionado = false;
     boolean bloco29Selecionado = false;
     boolean bloco30Selecionado = false;
-
+    Jogo jogo;
     /**
      * Creates new form TelaJogo
      */
@@ -60,8 +60,7 @@ public class TelaJogo extends javax.swing.JFrame {
     public void Jogar(String NomeJogador) {
         
         
-        
-        Jogo jogo = new Jogo(NomeJogador);
+        jogo = new Jogo(NomeJogador);
 
         try {
             jogo.palavraSecreta = jogo.sorteiaPalavraSecreta();
@@ -80,6 +79,7 @@ public class TelaJogo extends javax.swing.JFrame {
     }
 
     public void verificaTentativa1(String palavraSecreta) {
+   
         if (botao1.getText().length() == 1
                 && botao2.getText().length() == 1
                 && botao3.getText().length() == 1
@@ -96,9 +96,9 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao4.setBackground(Color.green);
                 botao5.setBackground(Color.green);
                 
-                 try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
-                    String linha = "1   1    0";
+                try {
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
+                    String linha = "1   1   0";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
                 } catch (IOException e) {
@@ -111,79 +111,80 @@ public class TelaJogo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
-                
+            else{  
                 try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
                     String linha = "1   0   1";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
                 } catch (IOException e) {
                     System.out.println("Erro ao gravar usuario");
                 }
-            Palavra palavra = new Palavra(tentativa);
-            System.out.println(palavra.letras.get(0).getChar());
-            palavra.setCores(palavraSecreta);
-            int cor = palavra.letras.get(0).getCor();
-            System.out.println(cor);
-            if (cor == 1) {
-                botao1.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao1.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao1.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(1).getCor();
-            if (cor == 1) {
-                botao2.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao2.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao2.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(2).getCor();
-            if (cor == 1) {
-                botao3.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao3.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao3.setBackground(Color.gray);
-            }
+                Palavra palavra = new Palavra(tentativa);
+                System.out.println(palavra.letras.get(0).getChar());
+                palavra.setCores(palavraSecreta);
+                int cor = palavra.letras.get(0).getCor();
+                System.out.println(cor);
+                if (cor == 1) {
+                    botao1.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao1.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao1.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(1).getCor();
+                if (cor == 1) {
+                    botao2.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao2.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao2.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(2).getCor();
+                if (cor == 1) {
+                    botao3.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao3.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao3.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(3).getCor();
-            if (cor == 1) {
-                botao4.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao4.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao4.setBackground(Color.gray);
-            }
+                cor = palavra.letras.get(3).getCor();
+                if (cor == 1) {
+                    botao4.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao4.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao4.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(4).getCor();
-            if (cor == 1) {
-                botao5.setBackground(Color.green);
+                cor = palavra.letras.get(4).getCor();
+                if (cor == 1) {
+                    botao5.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao5.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao5.setBackground(Color.gray);
+                }
+                jButton3.setVisible(true);
+                jButton1.setVisible(false);
+
+                botao1.setEnabled(false);
+                botao2.setEnabled(false);
+                botao3.setEnabled(false);
+                botao4.setEnabled(false);
+                botao5.setEnabled(false);
             }
-            if (cor == 2) {
-                botao5.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao5.setBackground(Color.gray);
-            }
-            jButton3.setVisible(true);
-            jButton1.setVisible(false);
-            
-            botao1.setEnabled(false);
-            botao2.setEnabled(false);
-            botao3.setEnabled(false);
-            botao4.setEnabled(false);
-            botao5.setEnabled(false);
         }
     }
 
@@ -205,7 +206,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao10.setBackground(Color.green);
                 
                 try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
                     String linha = "2   1   0";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -218,82 +219,84 @@ public class TelaJogo extends javax.swing.JFrame {
                 ///fechar telade jogo
                 //contabilizar pontos do jogador
             }
-            
-            try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
-                    String linha = "2   1   0";
-                    buffWrite.append(linha + "\n");
-                    buffWrite.close();
-                } catch (IOException e) {
-                    System.out.println("Erro ao gravar usuario");
+            else{
+
+                try {
+                        BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
+                        String linha = "2   0   1";
+                        buffWrite.append(linha + "\n");
+                        buffWrite.close();
+                    } catch (IOException e) {
+                        System.out.println("Erro ao gravar usuario");
+                    }
+
+
+                Palavra palavra = new Palavra(tentativa);
+                System.out.println(palavra.letras.get(0).getChar());
+                palavra.setCores(palavraSecreta);
+                int cor = palavra.letras.get(0).getCor();
+                System.out.println(cor);
+                if (cor == 1) {
+                    botao6.setBackground(Color.green);
                 }
-            
-            
-            Palavra palavra = new Palavra(tentativa);
-            System.out.println(palavra.letras.get(0).getChar());
-            palavra.setCores(palavraSecreta);
-            int cor = palavra.letras.get(0).getCor();
-            System.out.println(cor);
-            if (cor == 1) {
-                botao6.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao6.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao6.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(1).getCor();
-            if (cor == 1) {
-                botao7.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao7.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao7.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(2).getCor();
-            if (cor == 1) {
-                botao8.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao8.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao8.setBackground(Color.gray);
-            }
+                if (cor == 2) {
+                    botao6.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao6.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(1).getCor();
+                if (cor == 1) {
+                    botao7.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao7.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao7.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(2).getCor();
+                if (cor == 1) {
+                    botao8.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao8.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao8.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(3).getCor();
-            if (cor == 1) {
-                botao9.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao9.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao9.setBackground(Color.gray);
-            }
+                cor = palavra.letras.get(3).getCor();
+                if (cor == 1) {
+                    botao9.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao9.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao9.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(4).getCor();
-            if (cor == 1) {
-                botao10.setBackground(Color.green);
+                cor = palavra.letras.get(4).getCor();
+                if (cor == 1) {
+                    botao10.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao10.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao10.setBackground(Color.gray);
+                }
+
+                jButton3.setVisible(false);
+                jButton4.setVisible(true);
+
+                botao6.setEnabled(false);
+                botao7.setEnabled(false);
+                botao8.setEnabled(false);
+                botao9.setEnabled(false);
+                botao10.setEnabled(false);
             }
-            if (cor == 2) {
-                botao10.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao10.setBackground(Color.gray);
-            }
-            
-            jButton3.setVisible(false);
-            jButton4.setVisible(true);
-            
-            botao6.setEnabled(false);
-            botao7.setEnabled(false);
-            botao8.setEnabled(false);
-            botao9.setEnabled(false);
-            botao10.setEnabled(false);
         }
     }
 
@@ -315,7 +318,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 
                 
                  try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
                     String linha = "3   1   0 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -326,9 +329,9 @@ public class TelaJogo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
-            
+            else{
                try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
                     String linha = "3   0   1 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -337,70 +340,71 @@ public class TelaJogo extends javax.swing.JFrame {
                 }
                
                
-            Palavra palavra = new Palavra(tentativa);
-            System.out.println(palavra.letras.get(0).getChar());
-            palavra.setCores(palavraSecreta);
-            int cor = palavra.letras.get(0).getCor();
-            System.out.println(cor);
-            if (cor == 1) {
-                botao11.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao11.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao11.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(1).getCor();
-            if (cor == 1) {
-                botao12.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao12.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao12.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(2).getCor();
-            if (cor == 1) {
-                botao13.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao13.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao13.setBackground(Color.gray);
-            }
+                Palavra palavra = new Palavra(tentativa);
+                System.out.println(palavra.letras.get(0).getChar());
+                palavra.setCores(palavraSecreta);
+                int cor = palavra.letras.get(0).getCor();
+                System.out.println(cor);
+                if (cor == 1) {
+                    botao11.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao11.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao11.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(1).getCor();
+                if (cor == 1) {
+                    botao12.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao12.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao12.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(2).getCor();
+                if (cor == 1) {
+                    botao13.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao13.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao13.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(3).getCor();
-            if (cor == 1) {
-                botao14.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao14.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao14.setBackground(Color.gray);
-            }
+                cor = palavra.letras.get(3).getCor();
+                if (cor == 1) {
+                    botao14.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao14.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao14.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(4).getCor();
-            if (cor == 1) {
-                botao15.setBackground(Color.green);
+                cor = palavra.letras.get(4).getCor();
+                if (cor == 1) {
+                    botao15.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao15.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao15.setBackground(Color.gray);
+                }
+                jButton5.setVisible(true);
+                jButton4.setVisible(false);
+
+                botao11.setEnabled(false);
+                botao12.setEnabled(false);
+                botao13.setEnabled(false);
+                botao14.setEnabled(false);
+                botao15.setEnabled(false);
             }
-            if (cor == 2) {
-                botao15.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao15.setBackground(Color.gray);
-            }
-            jButton5.setVisible(true);
-            jButton4.setVisible(false);
-            
-            botao11.setEnabled(false);
-            botao12.setEnabled(false);
-            botao13.setEnabled(false);
-            botao14.setEnabled(false);
-            botao15.setEnabled(false);
         }
     }
 
@@ -421,7 +425,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao20.setBackground(Color.green);
                 
                    try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
                     String linha = "4   1   0 \n";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -432,9 +436,9 @@ public class TelaJogo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
-            
+            else{
                try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
                     String linha = "4   0   1 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -442,70 +446,71 @@ public class TelaJogo extends javax.swing.JFrame {
                     System.out.println("Erro ao gravar usuario");
                 }
                
-            Palavra palavra = new Palavra(tentativa);
-            System.out.println(palavra.letras.get(0).getChar());
-            palavra.setCores(palavraSecreta);
-            int cor = palavra.letras.get(0).getCor();
-            System.out.println(cor);
-            if (cor == 1) {
-                botao16.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao16.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao16.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(1).getCor();
-            if (cor == 1) {
-                botao17.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao17.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao17.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(2).getCor();
-            if (cor == 1) {
-                botao18.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao18.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao18.setBackground(Color.gray);
-            }
+                Palavra palavra = new Palavra(tentativa);
+                System.out.println(palavra.letras.get(0).getChar());
+                palavra.setCores(palavraSecreta);
+                int cor = palavra.letras.get(0).getCor();
+                System.out.println(cor);
+                if (cor == 1) {
+                    botao16.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao16.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao16.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(1).getCor();
+                if (cor == 1) {
+                    botao17.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao17.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao17.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(2).getCor();
+                if (cor == 1) {
+                    botao18.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao18.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao18.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(3).getCor();
-            if (cor == 1) {
-                botao19.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao19.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao19.setBackground(Color.gray);
-            }
+                cor = palavra.letras.get(3).getCor();
+                if (cor == 1) {
+                    botao19.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao19.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao19.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(4).getCor();
-            if (cor == 1) {
-                botao20.setBackground(Color.green);
+                cor = palavra.letras.get(4).getCor();
+                if (cor == 1) {
+                    botao20.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao20.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao20.setBackground(Color.gray);
+                }
+                jButton5.setVisible(false);
+                jButton6.setVisible(true);
+
+                botao16.setEnabled(false);
+                botao17.setEnabled(false);
+                botao18.setEnabled(false);
+                botao19.setEnabled(false);
+                botao20.setEnabled(false);
             }
-            if (cor == 2) {
-                botao20.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao20.setBackground(Color.gray);
-            }
-            jButton5.setVisible(false);
-            jButton6.setVisible(true);
-            
-            botao16.setEnabled(false);
-            botao17.setEnabled(false);
-            botao18.setEnabled(false);
-            botao19.setEnabled(false);
-            botao20.setEnabled(false);
         }
     }
 
@@ -526,7 +531,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao25.setBackground(Color.green);
                 
                  try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
                     String linha = "5   1   0 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -539,9 +544,9 @@ public class TelaJogo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
-            
+            else{
                 try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
                     String linha = "5   0   1 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -550,70 +555,71 @@ public class TelaJogo extends javax.swing.JFrame {
                 }
             
             
-            Palavra palavra = new Palavra(tentativa);
-            System.out.println(palavra.letras.get(0).getChar());
-            palavra.setCores(palavraSecreta);
-            int cor = palavra.letras.get(0).getCor();
-            System.out.println(cor);
-            if (cor == 1) {
-                botao21.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao21.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao21.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(1).getCor();
-            if (cor == 1) {
-                botao22.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao22.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao22.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(2).getCor();
-            if (cor == 1) {
-                botao23.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao23.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao23.setBackground(Color.gray);
-            }
+                Palavra palavra = new Palavra(tentativa);
+                System.out.println(palavra.letras.get(0).getChar());
+                palavra.setCores(palavraSecreta);
+                int cor = palavra.letras.get(0).getCor();
+                System.out.println(cor);
+                if (cor == 1) {
+                    botao21.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao21.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao21.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(1).getCor();
+                if (cor == 1) {
+                    botao22.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao22.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao22.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(2).getCor();
+                if (cor == 1) {
+                    botao23.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao23.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao23.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(3).getCor();
-            if (cor == 1) {
-                botao24.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao24.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao24.setBackground(Color.gray);
-            }
+                cor = palavra.letras.get(3).getCor();
+                if (cor == 1) {
+                    botao24.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao24.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao24.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(4).getCor();
-            if (cor == 1) {
-                botao25.setBackground(Color.green);
+                cor = palavra.letras.get(4).getCor();
+                if (cor == 1) {
+                    botao25.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao25.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao25.setBackground(Color.gray);
+                }
+                jButton8.setVisible(true);
+                jButton6.setVisible(false);
+
+                botao21.setEnabled(false);
+                botao22.setEnabled(false);
+                botao23.setEnabled(false);
+                botao24.setEnabled(false);
+                botao25.setEnabled(false);
             }
-            if (cor == 2) {
-                botao25.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao25.setBackground(Color.gray);
-            }
-            jButton8.setVisible(true);
-            jButton6.setVisible(false);
-            
-            botao21.setEnabled(false);
-            botao22.setEnabled(false);
-            botao23.setEnabled(false);
-            botao24.setEnabled(false);
-            botao25.setEnabled(false);
         }
     }
 
@@ -634,7 +640,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao30.setBackground(Color.green);
                 
                   try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
                     String linha = "6   1   0 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -646,9 +652,9 @@ public class TelaJogo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, mensagem);
                 ///fechar telade jogo
             }
-            
+            else{
                 try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter(this.jogo.path, true));
                     String linha = "6   0   1";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -657,71 +663,72 @@ public class TelaJogo extends javax.swing.JFrame {
                 }
              
              
-            Palavra palavra = new Palavra(tentativa);
-            System.out.println(palavra.letras.get(0).getChar());
-            palavra.setCores(palavraSecreta);
-            int cor = palavra.letras.get(0).getCor();
-            System.out.println(cor);
-            if (cor == 1) {
-                botao26.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao26.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao26.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(1).getCor();
-            if (cor == 1) {
-                botao27.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao27.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao27.setBackground(Color.gray);
-            }
-            cor = palavra.letras.get(2).getCor();
-            if (cor == 1) {
-                botao28.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao28.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao28.setBackground(Color.gray);
-            }
+                Palavra palavra = new Palavra(tentativa);
+                System.out.println(palavra.letras.get(0).getChar());
+                palavra.setCores(palavraSecreta);
+                int cor = palavra.letras.get(0).getCor();
+                System.out.println(cor);
+                if (cor == 1) {
+                    botao26.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao26.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao26.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(1).getCor();
+                if (cor == 1) {
+                    botao27.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao27.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao27.setBackground(Color.gray);
+                }
+                cor = palavra.letras.get(2).getCor();
+                if (cor == 1) {
+                    botao28.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao28.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao28.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(3).getCor();
-            if (cor == 1) {
-                botao29.setBackground(Color.green);
-            }
-            if (cor == 2) {
-                botao29.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao29.setBackground(Color.gray);
-            }
+                cor = palavra.letras.get(3).getCor();
+                if (cor == 1) {
+                    botao29.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao29.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao29.setBackground(Color.gray);
+                }
 
-            cor = palavra.letras.get(4).getCor();
-            if (cor == 1) {
-                botao30.setBackground(Color.green);
+                cor = palavra.letras.get(4).getCor();
+                if (cor == 1) {
+                    botao30.setBackground(Color.green);
+                }
+                if (cor == 2) {
+                    botao30.setBackground(Color.yellow);
+                }
+                if (cor == 3) {
+                    botao30.setBackground(Color.gray);
+                }
+
+                jButton8.setVisible(false);
+
+
+                botao21.setEnabled(false);
+                botao22.setEnabled(false);
+                botao23.setEnabled(false);
+                botao24.setEnabled(false);
+                botao25.setEnabled(false);
             }
-            if (cor == 2) {
-                botao30.setBackground(Color.yellow);
-            }
-            if (cor == 3) {
-                botao30.setBackground(Color.gray);
-            }
-            
-            jButton8.setVisible(false);
-            
-            
-            botao21.setEnabled(false);
-            botao22.setEnabled(false);
-            botao23.setEnabled(false);
-            botao24.setEnabled(false);
-            botao25.setEnabled(false);
         }
     }
 

@@ -27,7 +27,8 @@ public class TrabalhoOO {
         //jogo.JogarInterface();
         //TelaDeJogo tela = new TelaDeJogo();
         //tela.setVisible(true);
+        
         TelaJogo tela = new TelaJogo();
-        tela.Jogar("Larissa2");
+        tela.Jogar("Gleiphinho");
     }
 }

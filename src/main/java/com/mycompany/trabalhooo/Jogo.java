@@ -23,13 +23,14 @@ public class Jogo {
     List<Palavra> listaPalavras = new ArrayList<>();  /// lista que será preenchida com as palavras tentativa do jogador
     private List<Usuario> usuarios = new ArrayList<>();
     Usuario usuarioAtual;
+    String path;
     
     public Jogo(String nomeUsuario){
         configuracaoInicial(nomeUsuario);
     } 
     
     private void configuracaoInicial(String nomeUsuario){
-        String path = "src/main/java/com/mycompany/trabalhooo/Historico/" + nomeUsuario +".txt";
+        this.path = "src/main/java/com/mycompany/trabalhooo/Historico/" + nomeUsuario +".txt";
         try{
             BufferedReader checarUsuario = new BufferedReader(new FileReader(path));
             String linha = checarUsuario.readLine();
