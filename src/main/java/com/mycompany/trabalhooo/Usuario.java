@@ -50,7 +50,7 @@ public abstract class Usuario {
     public void registraUsuario(){
         try{
             BufferedWriter buffWriteUsuario = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Usuarios.txt",true));
-            buffWriteUsuario.append(this.apelidoUsuario + ";" + this.senha + ";" + this.email + ";" + this.vitorias + "\n");
+            buffWriteUsuario.append("\n" + this.apelidoUsuario + ";" + this.senha + ";" + this.email + ";" + this.vitorias);
             buffWriteUsuario.close();
             File arquivo = new File("src/main/java/com/mycompany/trabalhooo/Historico/" + apelidoUsuario +".txt");
             arquivo.createNewFile();
@@ -58,6 +58,7 @@ public abstract class Usuario {
             System.out.println("Erro ao escrever novo usuário em Usuarios.txt");
         }
     }
+    
 
     public int getFase() {
         return fase;

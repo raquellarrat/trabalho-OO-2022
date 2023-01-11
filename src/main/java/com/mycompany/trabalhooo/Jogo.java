@@ -3,17 +3,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.trabalhooo;
+import java.io.File;
 
 /**
  *
  * @author NOTE
  */
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 import java.util.Scanner;
 import java.util.Random;
+import java.io.File;
 
 public class Jogo {
     List<String> palavras = new ArrayList<>();
@@ -21,7 +25,7 @@ public class Jogo {
     int vidas = 5;
     public String palavraSecreta;
     List<Palavra> listaPalavras = new ArrayList<>();  /// lista que será preenchida com as palavras tentativa do jogador
-    private List<Usuario> usuarios = new ArrayList<>(); /// Lista de todos os usuários lidos do arquivo
+    public List<Usuario> usuarios = new ArrayList<>(); /// Lista de todos os usuários lidos do arquivo
     Usuario usuarioAtual;
     
     public Jogo(String nomeUsuario, String senhaUsuario){
@@ -32,16 +36,14 @@ public class Jogo {
     } 
     
     public void preencheListaUsuarios(){
-        //resolver problema do pula linha
         String path = "src/main/java/com/mycompany/trabalhooo/Usuarios.txt";
         try{
             BufferedReader checarUsuario = new BufferedReader(new FileReader(path));       
-                for (String linha = checarUsuario.readLine(); !linha.isEmpty(); linha = checarUsuario.readLine()) {
-
+            for (String linha = checarUsuario.readLine(); linha!=null; linha = checarUsuario.readLine()) {
                 String[] dados = linha.split(";");
-
-               Jogador jogador = new Jogador(dados[2],dados[1],dados[0],dados[3]);
-               this.usuarios.add(jogador);
+                
+                Jogador jogador = new Jogador(dados[2],dados[1],dados[0],dados[3]);
+                this.usuarios.add(jogador);
             }
             
             checarUsuario.close();
@@ -65,6 +67,29 @@ public class Jogo {
             System.out.println("Olá, " + nomeUsuario + " seu registro não foi encontrado, faça seu cadastro!");
             CadastroView cadastro = new CadastroView();
             cadastro.setVisible(true);
+        }
+    }
+    
+    public void atualizaArquivo(){
+        //passar por todos os jogadores da lista e pra todos chamar a funcao
+        //limpar o arquivo usuario e reescrevê-lo, depois que o jogo acabar
+        File uFile = new File("src/main/java/com/mycompany/trabalhooo/Usuarios.txt"); 
+        if (uFile.delete()) { 
+          System.out.println("Deleted the folder: " + uFile.getName());
+        } else {
+          System.out.println("Failed to delete the folder.");
+        }
+        int i=0;
+        try{
+            BufferedWriter buffWriteUsuario = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Usuarios.txt",true));
+            buffWriteUsuario.append(this.usuarios.get(i).apelidoUsuario + ";" + this.usuarios.get(i).senha + ";" + this.usuarios.get(i).email + ";" + this.usuarios.get(i).vitorias);
+            buffWriteUsuario.close();
+        }catch(IOException e){
+            System.out.println("Erro ao escrever novo usuário em Usuarios.txt");
+        }
+        //imprimi
+        for(i=1;i<this.usuarios.size();i++){
+            this.usuarios.get(i).registraUsuario();
         }
     }
     

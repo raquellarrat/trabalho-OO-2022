@@ -105,7 +105,14 @@ public class TelaJogo extends javax.swing.JFrame {
                     System.out.println("Erro ao gravar usuario");
                 }
                 
+                 
+                ///ATUALIZA VITÓRIAS DO JOGADOR E ATUALIZA ARQUIVO
                 
+                for(int i=0;i<this.jogo.usuarios.size();i++){
+                    if(this.jogo.usuarios.get(i)==this.jogo.usuarioAtual)
+                        this.jogo.usuarios.get(i).vitorias++;
+                    this.jogo.atualizaArquivo();
+                }
                 
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
@@ -211,6 +218,12 @@ public class TelaJogo extends javax.swing.JFrame {
                     buffWrite.close();
                 } catch (IOException e) {
                     System.out.println("Erro ao gravar usuario");
+                }
+                
+                for(int i=0;i<this.jogo.usuarios.size();i++){
+                    if(this.jogo.usuarios.get(i)==this.jogo.usuarioAtual)
+                        this.jogo.usuarios.get(i).vitorias++;
+                    this.jogo.atualizaArquivo();
                 }
                 
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
@@ -321,6 +334,13 @@ public class TelaJogo extends javax.swing.JFrame {
                 } catch (IOException e) {
                     System.out.println("Erro ao gravar usuario");
                 }
+                 
+                 for(int i=0;i<this.jogo.usuarios.size();i++){
+                    if(this.jogo.usuarios.get(i)==this.jogo.usuarioAtual)
+                        this.jogo.usuarios.get(i).vitorias++;
+                    this.jogo.atualizaArquivo();
+                }
+                 
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
                 exit(0);
@@ -427,6 +447,13 @@ public class TelaJogo extends javax.swing.JFrame {
                 } catch (IOException e) {
                     System.out.println("Erro ao gravar usuario");
                 }
+                   
+                   for(int i=0;i<this.jogo.usuarios.size();i++){
+                    if(this.jogo.usuarios.get(i)==this.jogo.usuarioAtual)
+                        this.jogo.usuarios.get(i).vitorias++;
+                    this.jogo.atualizaArquivo();
+                }
+                   
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
                 exit(0);
@@ -533,6 +560,11 @@ public class TelaJogo extends javax.swing.JFrame {
                     System.out.println("Erro ao gravar usuario");
                 }
                  
+                 for(int i=0;i<this.jogo.usuarios.size();i++){
+                    if(this.jogo.usuarios.get(i)==this.jogo.usuarioAtual)
+                        this.jogo.usuarios.get(i).vitorias++;
+                    this.jogo.atualizaArquivo();
+                }
                  
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
@@ -639,6 +671,12 @@ public class TelaJogo extends javax.swing.JFrame {
                     buffWrite.close();
                 } catch (IOException e) {
                     System.out.println("Erro ao gravar usuario");
+                }
+                 
+                  for(int i=0;i<this.jogo.usuarios.size();i++){
+                    if(this.jogo.usuarios.get(i)==this.jogo.usuarioAtual)
+                        this.jogo.usuarios.get(i).vitorias++;
+                    this.jogo.atualizaArquivo();
                 }
                   
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
