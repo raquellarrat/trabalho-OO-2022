@@ -27,11 +27,10 @@ public abstract class Usuario {
         this.email = email;
         this.senha = senha;
         this.vitorias = Character.getNumericValue(vitorias.charAt(0));
-
+        
         File arquivo = new File("src/main/java/com/mycompany/trabalhooo/Historico/" + apelidoUsuario +".txt");
         try {
             arquivo.createNewFile();
-            System.out.println("Usuario criado com sucesso!");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -54,6 +53,15 @@ public abstract class Usuario {
             System.out.println("Erro ao gravar usuario");
         }*/
 	
+    }
+    public void registraUsuario(){
+        try{
+            BufferedWriter buffWriteUsuario = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Usuarios.txt",true));
+            buffWriteUsuario.append(this.apelidoUsuario + ";" + this.senha + ";" + this.email + ";" + this.vitorias + "\n");
+            buffWriteUsuario.close();
+        }catch(IOException e){
+            System.out.println("Erro ao escrever novo usuário em Usuarios.txt");
+        }
     }
 
     public int getFase() {

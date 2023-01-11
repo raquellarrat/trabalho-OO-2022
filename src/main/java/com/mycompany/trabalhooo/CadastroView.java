@@ -30,11 +30,11 @@ public class CadastroView extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        email = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        usuario = new javax.swing.JTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea3 = new javax.swing.JTextArea();
+        senha = new javax.swing.JTextArea();
         jToggleButton1 = new javax.swing.JToggleButton();
         jLabel5 = new javax.swing.JLabel();
 
@@ -50,21 +50,30 @@ public class CadastroView extends javax.swing.JFrame {
         jLabel3.setText("Senha:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 214, -1));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jScrollPane1.setHorizontalScrollBar(null);
+
+        email.setColumns(20);
+        email.setRows(5);
+        jScrollPane1.setViewportView(email);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, 34));
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane2.setViewportView(jTextArea2);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jScrollPane2.setHorizontalScrollBar(null);
+
+        usuario.setColumns(20);
+        usuario.setRows(5);
+        jScrollPane2.setViewportView(usuario);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, -1, 34));
 
-        jTextArea3.setColumns(20);
-        jTextArea3.setRows(5);
-        jScrollPane3.setViewportView(jTextArea3);
+        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jScrollPane3.setHorizontalScrollBar(null);
+
+        senha.setColumns(20);
+        senha.setRows(5);
+        jScrollPane3.setViewportView(senha);
 
         getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, -1, 34));
 
@@ -75,9 +84,6 @@ public class CadastroView extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 111, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/azul.jpg"))); // NOI18N
-        jLabel5.setText("jLabel5");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-28, -26, 450, 330));
 
         pack();
@@ -85,8 +91,18 @@ public class CadastroView extends javax.swing.JFrame {
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
         // TODO add your handling code here:
-        CadastroView cadastrar = new CadastroView();
-        cadastrar.setVisible(true);
+        //TelaJogo tela = new TelaJogo();
+        //tela.Jogar(usuario.getText(), senha.getText());
+        //Jogo jogo = new Jogo(usuario.getText(),senha.getText());
+        //jogo.criarUsuario(usuario.getText(), email.getText(), senha.getText());
+        
+        Jogador jogador = new Jogador(email.getText(),senha.getText(),usuario.getText(),"0");
+        jogador.registraUsuario();
+        //this.usuarioAtual = jogador;
+        //this.usuarios.add(jogador);
+        TelaJogo tela = new TelaJogo();
+        tela.Jogar(usuario.getText(), senha.getText());
+        
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     /**
@@ -119,12 +135,14 @@ public class CadastroView extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastroView().setVisible(true);
+//                new CadastroView().setVisible(true);
+                System.out.println("entrou aqui");
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextArea email;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -132,9 +150,8 @@ public class CadastroView extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JTextArea senha;
+    private javax.swing.JTextArea usuario;
     // End of variables declaration//GEN-END:variables
 }

@@ -87,7 +87,6 @@ public class LoginView extends javax.swing.JFrame {
 
             TelaJogo tela = new TelaJogo();
             tela.Jogar(nome.getText(), senha.getText());
-            
     
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 

@@ -49,6 +49,7 @@ public class TelaJogo extends javax.swing.JFrame {
     boolean bloco28Selecionado = false;
     boolean bloco29Selecionado = false;
     boolean bloco30Selecionado = false;
+    Jogo jogo;
 
     /**
      * Creates new form TelaJogo
@@ -58,22 +59,23 @@ public class TelaJogo extends javax.swing.JFrame {
     }
 
     public void Jogar(String NomeJogador, String senhaJogador) {
-        Jogo jogo = new Jogo(NomeJogador,senhaJogador);
+        jogo = new Jogo(NomeJogador,senhaJogador);
+        if(jogo.usuarioAtual!=null){
+            try {
+                jogo.palavraSecreta = jogo.sorteiaPalavraSecreta();
+                this.palavraSecreta = jogo.palavraSecreta.toUpperCase();
+            } catch (IOException ex) {
+                System.out.println("Erro");
+            }
+            System.out.println(this.palavraSecreta);
+            this.setVisible(true);
 
-        try {
-            jogo.palavraSecreta = jogo.sorteiaPalavraSecreta();
-            this.palavraSecreta = jogo.palavraSecreta.toUpperCase();
-        } catch (IOException ex) {
-            System.out.println("Erro");
+            jButton3.setVisible(false);
+            jButton4.setVisible(false);
+            jButton5.setVisible(false);
+            jButton6.setVisible(false);
+            jButton8.setVisible(false);
         }
-        System.out.println(this.palavraSecreta);
-        this.setVisible(true);
-        
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton5.setVisible(false);
-        jButton6.setVisible(false);
-        jButton8.setVisible(false);
     }
 
     public void verificaTentativa1(String palavraSecreta) {
@@ -106,7 +108,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
-                ///fechar telade jogo
+                ///fechar tela de jogo
             }
                 
                 try {

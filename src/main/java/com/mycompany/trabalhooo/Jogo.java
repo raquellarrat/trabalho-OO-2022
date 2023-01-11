@@ -21,7 +21,7 @@ public class Jogo {
     int vidas = 5;
     public String palavraSecreta;
     List<Palavra> listaPalavras = new ArrayList<>();  /// lista que será preenchida com as palavras tentativa do jogador
-    private List<Usuario> usuarios = new ArrayList<>();
+    private List<Usuario> usuarios = new ArrayList<>(); /// Lista de todos os usuários lidos do arquivo
     Usuario usuarioAtual;
     
     public Jogo(String nomeUsuario, String senhaUsuario){
@@ -34,17 +34,13 @@ public class Jogo {
     } 
     
     public void preencheListaUsuarios(){
-        
+        //resolver problema do pula linha
         String path = "src/main/java/com/mycompany/trabalhooo/Usuarios.txt";
         try{
-            BufferedReader checarUsuario = new BufferedReader(new FileReader(path));           
+            BufferedReader checarUsuario = new BufferedReader(new FileReader(path));       
                 for (String linha = checarUsuario.readLine(); !linha.isEmpty(); linha = checarUsuario.readLine()) {
 
                 String[] dados = linha.split(";");
-                System.out.println(dados[0]);
-                System.out.println(dados[1]);
-                System.out.println(dados[2]);
-                System.out.println(dados[3]);
 
                Jogador jogador = new Jogador(dados[2],dados[1],dados[0],dados[3]);
                this.usuarios.add(jogador);
@@ -59,27 +55,19 @@ public class Jogo {
     }
     
     private void configuracaoInicial(String nomeUsuario, String senhaUsuario){
-        boolean existe = false;
-        /*
-        String path = "src/main/java/com/mycompany/trabalhooo/Historico/" + nomeUsuario +".txt";
-        try{
-            BufferedReader checarUsuario = new BufferedReader(new FileReader(path));
-            String linha = checarUsuario.readLine();
-            checarUsuario.close();
-        }catch (IOException e){
-           // System.out.println("Usuario nao existe, faça o cadastro.");
-        }*/
         for(int i=0;i<this.usuarios.size();i++){
-            //percorre a lista de usuários.
             if(this.usuarios.get(i).apelidoUsuario.equals(nomeUsuario)){
                 if(this.usuarios.get(i).senha.equals(senhaUsuario)){
-                    existe = true;
                     System.out.println("Seja bem-vindo, " + nomeUsuario + "!");
+                    this.usuarioAtual = this.usuarios.get(i);
                 }
             }
         }
-        if(!existe)
+        if(this.usuarioAtual==null){
             System.out.println("Olá, " + nomeUsuario + " seu registro não foi encontrado, faça seu cadastro!");
+            CadastroView cadastro = new CadastroView();
+            cadastro.setVisible(true);
+        }
     }
     
     private int obterIndiceUsuario(String usuario){
