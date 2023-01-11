@@ -34,6 +34,7 @@ public abstract class Usuario {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
         try{
             BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/" + apelidoUsuario +".txt",true));
             buffWrite.append("TENTATIVA  ACERTO  ERRO  \n");
@@ -44,14 +45,6 @@ public abstract class Usuario {
         
        
         this.historico = arquivo;
-       /* try{
-            BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Usuarios.txt",true));
-            String linha = this.apelidoUsuario;
-            buffWrite.append(linha + "\n");
-            buffWrite.close();
-        }catch(IOException e){
-            System.out.println("Erro ao gravar usuario");
-        }*/
 	
     }
     public void registraUsuario(){
@@ -59,6 +52,8 @@ public abstract class Usuario {
             BufferedWriter buffWriteUsuario = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Usuarios.txt",true));
             buffWriteUsuario.append(this.apelidoUsuario + ";" + this.senha + ";" + this.email + ";" + this.vitorias + "\n");
             buffWriteUsuario.close();
+            File arquivo = new File("src/main/java/com/mycompany/trabalhooo/Historico/" + apelidoUsuario +".txt");
+            arquivo.createNewFile();
         }catch(IOException e){
             System.out.println("Erro ao escrever novo usuário em Usuarios.txt");
         }
