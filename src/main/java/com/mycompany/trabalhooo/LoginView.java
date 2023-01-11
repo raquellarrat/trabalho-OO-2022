@@ -4,6 +4,8 @@
  */
 package com.mycompany.trabalhooo;
 
+import com.mycompany.trabalhooo.MenuView;
+
 /**
  *
  * @author raque
@@ -27,7 +29,7 @@ public class LoginView extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        nome = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
@@ -38,9 +40,12 @@ public class LoginView extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        nome.setColumns(20);
+        nome.setRows(5);
+        jScrollPane1.setViewportView(nome);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 224, 34));
 
@@ -67,9 +72,6 @@ public class LoginView extends javax.swing.JFrame {
 
         jToggleButton2.setText("Cadastrar");
         getContentPane().add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 111, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/azul.jpg"))); // NOI18N
-        jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 420, 380));
 
         pack();
@@ -82,8 +84,12 @@ public class LoginView extends javax.swing.JFrame {
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
         // TODO add your handling code here:
-        MenuView telaDeMenu = new MenuView();
-        telaDeMenu.setVisible(true);
+
+             TelaJogo tela = new TelaJogo();
+
+            tela.Jogar(nome.getText());
+            
+    
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     /**
@@ -128,8 +134,8 @@ public class LoginView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
+    private javax.swing.JTextArea nome;
     // End of variables declaration//GEN-END:variables
 }

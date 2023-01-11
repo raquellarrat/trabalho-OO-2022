@@ -10,8 +10,8 @@ package com.mycompany.trabalhooo;
  */
 public class Jogador extends Usuario{
 
-    public Jogador(String email, String senha, String apelidoUsuario) {
-        super(email, senha, apelidoUsuario);
+    public Jogador(String email, String senha, String apelidoUsuario,int vitorias) {
+        super(email, senha, apelidoUsuario,vitorias);
     }
 
     @Override
@@ -19,10 +19,7 @@ public class Jogador extends Usuario{
         
     }
 
-    @Override
-    public void criarCampeonato() {
-        
-    }
+   
 
     @Override
     public void gerenciarUsuarios() {

@@ -17,13 +17,18 @@ public class Administrador extends Usuario{
     @Override
     public void gerenciarPalavras() {
          
-    }
-
-    @Override
-    public void criarCampeonato() {
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 
+   
     @Override
     public void gerenciarUsuarios() {
        

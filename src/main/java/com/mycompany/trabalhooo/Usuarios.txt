@@ -1,8 +1,3 @@
-josefina
-nubia
-henrique
-nubia
-Arthur
-Arthur2
-Larissa
-Larissa2
+Arthur;123arthur;arthur@gmail.com;8
+josefina;123jose;josefina@gmail.com;0
+

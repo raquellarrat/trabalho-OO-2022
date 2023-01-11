@@ -252,7 +252,6 @@
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="botao21" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="botao22" min="-2" pref="55" max="-2" attributes="0"/>

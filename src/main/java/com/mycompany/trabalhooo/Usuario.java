@@ -18,10 +18,11 @@ public abstract class Usuario {
     String apelidoUsuario; /// vai ser o nome do arquivo txt que tem o historico de vitórias
     String email;
     String senha;
+    int vitorias;
     File historico;
     private int fase;
 
-    public Usuario(String email, String senha, String apelidoUsuario) {
+    public Usuario(String email, String senha, String apelidoUsuario,int vitorias) {
         this.apelidoUsuario = apelidoUsuario;
         this.email = email;
         this.senha = senha;
@@ -68,7 +69,6 @@ public abstract class Usuario {
 
     public abstract void gerenciarPalavras(); /// adicionar palavras no jogo;
     
-    public abstract void criarCampeonato();
     
     public abstract void gerenciarUsuarios();
     

@@ -11,6 +11,7 @@
 
 package com.mycompany.trabalhooo;
 
+import view.TelaDeJogo;
 /**
  *
  * @author NOTE
@@ -22,12 +23,19 @@ public class TrabalhoOO {
        // Jogo jogo2 = new Jogo("nubia");
        // Jogo jogo3 = new Jogo("henrique");
        //Jogo jogo4 = new Jogo("Larissa");
+       
+            LoginView tela = new LoginView();
+            tela.setVisible(true);
+            
+            
+          //new TelaDeJogo().setVisible(true);
 
         //jogo.jogar();
         //jogo.JogarInterface();
         //TelaDeJogo tela = new TelaDeJogo();
         //tela.setVisible(true);
-        TelaJogo tela = new TelaJogo();
-        tela.Jogar("Larissa2");
+       // TelaJogo tela = new TelaJogo();
+        
+       // tela.Jogar("Larissa2");
     }
 }
