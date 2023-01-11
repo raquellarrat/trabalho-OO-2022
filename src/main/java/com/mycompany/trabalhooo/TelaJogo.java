@@ -57,8 +57,8 @@ public class TelaJogo extends javax.swing.JFrame {
         initComponents();
     }
 
-    public void Jogar(String NomeJogador) {
-        Jogo jogo = new Jogo(NomeJogador);
+    public void Jogar(String NomeJogador, String senhaJogador) {
+        Jogo jogo = new Jogo(NomeJogador,senhaJogador);
 
         try {
             jogo.palavraSecreta = jogo.sorteiaPalavraSecreta();
@@ -799,7 +799,6 @@ public class TelaJogo extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(699, 1000));
 
         botao1.setBackground(new java.awt.Color(153, 153, 153));
         botao1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N

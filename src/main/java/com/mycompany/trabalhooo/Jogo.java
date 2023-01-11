@@ -24,18 +24,12 @@ public class Jogo {
     private List<Usuario> usuarios = new ArrayList<>();
     Usuario usuarioAtual;
     
-    public Jogo(String nomeUsuario){
+    public Jogo(String nomeUsuario, String senhaUsuario){
         
         this.preencheListaUsuarios();
         
 
-        //configuracaoInicial(nomeUsuario);
-        
-        
-        
-        for(Usuario item : usuarios){
-            System.out.print(item.apelidoUsuario);
-        }
+        this.configuracaoInicial(nomeUsuario, senhaUsuario);
         
     } 
     
@@ -43,29 +37,17 @@ public class Jogo {
         
         String path = "src/main/java/com/mycompany/trabalhooo/Usuarios.txt";
         try{
-            BufferedReader checarUsuario = new BufferedReader(new FileReader(path));
-           // String linha= checarUsuario.readLine();
-            
-            
-            
+            BufferedReader checarUsuario = new BufferedReader(new FileReader(path));           
                 for (String linha = checarUsuario.readLine(); !linha.isEmpty(); linha = checarUsuario.readLine()) {
 
-                //System.out.println(linha);
-                //String dados[] = new String[4];
-
                 String[] dados = linha.split(";");
-                // dados = string.split(" ");
-               
-              
                 System.out.println(dados[0]);
                 System.out.println(dados[1]);
                 System.out.println(dados[2]);
                 System.out.println(dados[3]);
 
-               // Jogador jogador = new Jogador(dados[2],dados[1],dados[0],val);
-               // usuarios.add(jogador);
-                   //  linha = checarUsuario.readLine();
-
+               Jogador jogador = new Jogador(dados[2],dados[1],dados[0],dados[3]);
+               this.usuarios.add(jogador);
             }
             
             checarUsuario.close();
@@ -76,18 +58,28 @@ public class Jogo {
         
     }
     
-    private void configuracaoInicial(String nomeUsuario){
-        
-        
+    private void configuracaoInicial(String nomeUsuario, String senhaUsuario){
+        boolean existe = false;
+        /*
         String path = "src/main/java/com/mycompany/trabalhooo/Historico/" + nomeUsuario +".txt";
         try{
             BufferedReader checarUsuario = new BufferedReader(new FileReader(path));
             String linha = checarUsuario.readLine();
             checarUsuario.close();
         }catch (IOException e){
-           // System.out.println("Usuario nao existe");
-           // Usuario novo = new Jogador("email","senha",nomeUsuario,10);
+           // System.out.println("Usuario nao existe, faça o cadastro.");
+        }*/
+        for(int i=0;i<this.usuarios.size();i++){
+            //percorre a lista de usuários.
+            if(this.usuarios.get(i).apelidoUsuario.equals(nomeUsuario)){
+                if(this.usuarios.get(i).senha.equals(senhaUsuario)){
+                    existe = true;
+                    System.out.println("Seja bem-vindo, " + nomeUsuario + "!");
+                }
+            }
         }
+        if(!existe)
+            System.out.println("Olá, " + nomeUsuario + " seu registro não foi encontrado, faça seu cadastro!");
     }
     
     private int obterIndiceUsuario(String usuario){

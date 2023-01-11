@@ -10,7 +10,7 @@ package com.mycompany.trabalhooo;
  */
 public class Jogador extends Usuario{
 
-    public Jogador(String email, String senha, String apelidoUsuario,int vitorias) {
+    public Jogador(String email, String senha, String apelidoUsuario,String vitorias) {
         super(email, senha, apelidoUsuario,vitorias);
     }
 

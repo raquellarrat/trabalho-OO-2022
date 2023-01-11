@@ -10,8 +10,8 @@ package com.mycompany.trabalhooo;
  */
 public class Administrador extends Usuario{
 
-    public Administrador(String email, String senha, String apelidoUsuario) {
-        super(email, senha, apelidoUsuario);
+    public Administrador(String email, String senha, String apelidoUsuario, String vitorias) {
+        super(email, senha, apelidoUsuario, vitorias);
     }
 
     @Override

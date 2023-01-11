@@ -22,10 +22,11 @@ public abstract class Usuario {
     File historico;
     private int fase;
 
-    public Usuario(String email, String senha, String apelidoUsuario,int vitorias) {
+    public Usuario(String email, String senha, String apelidoUsuario,String vitorias) {
         this.apelidoUsuario = apelidoUsuario;
         this.email = email;
         this.senha = senha;
+        this.vitorias = Character.getNumericValue(vitorias.charAt(0));
 
         File arquivo = new File("src/main/java/com/mycompany/trabalhooo/Historico/" + apelidoUsuario +".txt");
         try {
@@ -44,14 +45,14 @@ public abstract class Usuario {
         
        
         this.historico = arquivo;
-        try{
+       /* try{
             BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Usuarios.txt",true));
             String linha = this.apelidoUsuario;
             buffWrite.append(linha + "\n");
             buffWrite.close();
         }catch(IOException e){
             System.out.println("Erro ao gravar usuario");
-        }
+        }*/
 	
     }
 
