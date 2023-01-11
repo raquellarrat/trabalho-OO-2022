@@ -79,7 +79,7 @@ public class TelaJogo extends javax.swing.JFrame {
         }
     }
 
-    public void verificaTentativa1(String palavraSecreta) {
+   public void verificaTentativa1(String palavraSecreta) {
         if (botao1.getText().length() == 1
                 && botao2.getText().length() == 1
                 && botao3.getText().length() == 1
@@ -97,7 +97,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao5.setBackground(Color.green);
                 
                  try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "1   1    0";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -118,9 +118,9 @@ public class TelaJogo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, mensagem);
                 exit(0);
             }
-                
+            else{
                 try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "1   0   1";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -192,6 +192,7 @@ public class TelaJogo extends javax.swing.JFrame {
             botao4.setEnabled(false);
             botao5.setEnabled(false);
         }
+        }
     }
 
     public void verificaTentativa2(String palavraSecreta) {
@@ -212,7 +213,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao10.setBackground(Color.green);
                 
                 try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "2   1   0";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -230,9 +231,9 @@ public class TelaJogo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, mensagem);
                 exit(0);
             }
-            
+            else{
             try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "2   1   0";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -307,6 +308,7 @@ public class TelaJogo extends javax.swing.JFrame {
             botao9.setEnabled(false);
             botao10.setEnabled(false);
         }
+        }
     }
 
     public void verificaTentativa3(String palavraSecreta) {
@@ -327,7 +329,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 
                 
                  try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "3   1   0 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -345,9 +347,10 @@ public class TelaJogo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, mensagem);
                 exit(0);
             }
+            {
             
                try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "3   0   1 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -421,6 +424,7 @@ public class TelaJogo extends javax.swing.JFrame {
             botao14.setEnabled(false);
             botao15.setEnabled(false);
         }
+        }
     }
 
     public void verificaTentativa4(String palavraSecreta) {
@@ -440,7 +444,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao20.setBackground(Color.green);
                 
                    try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "4   1   0 \n";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -458,9 +462,10 @@ public class TelaJogo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, mensagem);
                 exit(0);
             }
+            {
             
                try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "4   0   1 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -533,6 +538,7 @@ public class TelaJogo extends javax.swing.JFrame {
             botao19.setEnabled(false);
             botao20.setEnabled(false);
         }
+        }
     }
 
     public void verificaTentativa5(String palavraSecreta) {
@@ -552,7 +558,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao25.setBackground(Color.green);
                 
                  try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "5   1   0 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -570,9 +576,9 @@ public class TelaJogo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, mensagem);
                 exit(0);
             }
-            
+            else{
                 try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "5   0   1 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -646,6 +652,7 @@ public class TelaJogo extends javax.swing.JFrame {
             botao24.setEnabled(false);
             botao25.setEnabled(false);
         }
+        }
     }
 
     public void verificaTentativa6(String palavraSecreta) {
@@ -665,7 +672,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 botao30.setBackground(Color.green);
                 
                   try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "6   1   0 ";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -685,7 +692,7 @@ public class TelaJogo extends javax.swing.JFrame {
             }else{
             
                 try {
-                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
+                    BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/"+jogo.usuarioAtual.apelidoUsuario+".txt", true));
                     String linha = "6   0   1";
                     buffWrite.append(linha + "\n");
                     buffWrite.close();
@@ -767,6 +774,7 @@ public class TelaJogo extends javax.swing.JFrame {
             }
         }
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
