@@ -10,6 +10,7 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import static java.lang.System.exit;
 import javax.swing.JOptionPane;
 
 /**
@@ -108,7 +109,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
-                ///fechar tela de jogo
+                exit(0);
             }
                 
                 try {
@@ -214,8 +215,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
-                ///fechar telade jogo
-                //contabilizar pontos do jogador
+                exit(0);
             }
             
             try {
@@ -323,7 +323,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 }
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
-                ///fechar telade jogo
+                exit(0);
             }
             
                try {
@@ -429,7 +429,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 }
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
-                ///fechar telade jogo
+                exit(0);
             }
             
                try {
@@ -536,7 +536,7 @@ public class TelaJogo extends javax.swing.JFrame {
                  
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
-                ///fechar telade jogo
+                exit(0);
             }
             
                 try {
@@ -643,8 +643,8 @@ public class TelaJogo extends javax.swing.JFrame {
                   
                 String mensagem = "Parabéns, você venceu! A palavra secreta era: " + this.palavraSecreta;
                 JOptionPane.showMessageDialog(null, mensagem);
-                ///fechar telade jogo
-            }
+                exit(0);
+            }else{
             
                 try {
                     BufferedWriter buffWrite = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Historico/Arthur.txt", true));
@@ -721,6 +721,12 @@ public class TelaJogo extends javax.swing.JFrame {
             botao23.setEnabled(false);
             botao24.setEnabled(false);
             botao25.setEnabled(false);
+            
+            
+            String mensagem = "Acabaram as chances. Você perdeu...\n A palavra era: " + this.palavraSecreta;
+            JOptionPane.showMessageDialog(null, mensagem);
+            exit(0);
+            }
         }
     }
 

@@ -27,8 +27,6 @@ public class Jogo {
     public Jogo(String nomeUsuario, String senhaUsuario){
         
         this.preencheListaUsuarios();
-        
-
         this.configuracaoInicial(nomeUsuario, senhaUsuario);
         
     } 
