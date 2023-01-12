@@ -2,3 +2,4 @@ Larissa;123larissa;larissa@gmail.com;0
 Arthur;123arthur;arthur@gmail.com;0
 Novo;123456;novo@email.com;2
 raquelita;oikkk;aaaaa;1
+Daniel;123dani;dani@gmail.com;0

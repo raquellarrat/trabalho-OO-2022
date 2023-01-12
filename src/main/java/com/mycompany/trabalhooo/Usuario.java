@@ -46,7 +46,7 @@ public abstract class Usuario {
        
         this.historico = arquivo;
 	
-    }
+    }/*
     public void registraUsuario(){
         try{
             BufferedWriter buffWriteUsuario = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Usuarios.txt",true));
@@ -57,7 +57,7 @@ public abstract class Usuario {
         }catch(IOException e){
             System.out.println("Erro ao escrever novo usuário em Usuarios.txt");
         }
-    }
+    }*/
     
 
     public int getFase() {
@@ -78,5 +78,7 @@ public abstract class Usuario {
     public abstract void gerenciarUsuarios();
     
     public abstract void Jogar();
+    
+    public abstract void registraUsuario();
 
 }

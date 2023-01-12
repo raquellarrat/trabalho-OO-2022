@@ -19,23 +19,10 @@ import view.TelaDeJogo;
 public class TrabalhoOO {
 
     public static void main(String[] args) {
-        //Jogo jogo = new Jogo("josefina");
-       // Jogo jogo2 = new Jogo("nubia");
-       // Jogo jogo3 = new Jogo("henrique");
-       //Jogo jogo4 = new Jogo("Larissa");
-       
-            LoginView tela = new LoginView();
-            tela.setVisible(true);
-            
-            
-          //new TelaDeJogo().setVisible(true);
-
-        //jogo.jogar();
-        //jogo.JogarInterface();
-        //TelaDeJogo tela = new TelaDeJogo();
-        //tela.setVisible(true);
-       // TelaJogo tela = new TelaJogo();
+    
+        LoginView tela = new LoginView();
+        tela.setVisible(true);
+        ///Para cadastrar um novo usuário administrador, use a senha 'password'
         
-       // tela.Jogar("Larissa2");
     }
 }

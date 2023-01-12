@@ -91,15 +91,9 @@ public class CadastroView extends javax.swing.JFrame {
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
         // TODO add your handling code here:
-        //TelaJogo tela = new TelaJogo();
-        //tela.Jogar(usuario.getText(), senha.getText());
-        //Jogo jogo = new Jogo(usuario.getText(),senha.getText());
-        //jogo.criarUsuario(usuario.getText(), email.getText(), senha.getText());
         
         Jogador jogador = new Jogador(email.getText(),senha.getText(),usuario.getText(),"0");
         jogador.registraUsuario();
-        //this.usuarioAtual = jogador;
-        //this.usuarios.add(jogador);
         TelaJogo tela = new TelaJogo();
         tela.Jogar(usuario.getText(), senha.getText());
         

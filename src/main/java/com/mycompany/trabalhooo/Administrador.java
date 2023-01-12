@@ -4,6 +4,10 @@
  */
 package com.mycompany.trabalhooo;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 /**
  *
  * @author raque
@@ -16,16 +20,7 @@ public class Administrador extends Usuario{
 
     @Override
     public void gerenciarPalavras() {
-         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+   
     }
 
    
@@ -38,5 +33,15 @@ public class Administrador extends Usuario{
     public void Jogar() {
         
     }
-    
+    @Override
+    public void registraUsuario(){
+        try{
+            BufferedWriter buffWriteUsuario = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Administradores.txt",true));
+            buffWriteUsuario.append("\n" + this.apelidoUsuario + ";" + this.senha + ";" + this.email + ";" + this.vitorias);
+            buffWriteUsuario.close();
+        }catch(IOException e){
+            System.out.println("Erro ao escrever novo usuário em Usuarios.txt");
+        }
+    }
+
 }
