@@ -5132,10 +5132,23 @@ public class TelaJogo extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Para jogar o Find Word, você deve inserir as letras formando uma palavra com o mesmo\n" +
+"número de caracteres da letra sorteada, no caso, 5. A cada vez que tentar uma palavra\n" +
+"diferente da correta, o jogo alerta através da mudança de cor das\n" +
+"letras, se houver uma ou mais letras da palavra inserida que estão presentes\n" +
+"no termo sorteado. Se a letra ficar amarela, significa que ela existe na palavra sorteada,\n" +
+"porém, em uma posição diferente. Se ficar verde, significa você\n" +
+"acertou a letra e sua posição no termo. Por fim, se a letra não mudar de cor\n" +
+"nas lacunas e ficar marcada no teclado, significa que aquela letra não está\n" +
+"presente no termo.\n" +
+"Você tem 6 tentativas de acertar a palavra sorteada. Ao final das 6 tentativas, se conseguir adivinhar\n a palavra sorteada, você" +
+" vence a partida! Senão, você perde.\n\n", "Seu histórico", JOptionPane.INFORMATION_MESSAGE, null);
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Veja seus dados e seu histórico de vitórias:\nNome: " + this.jogo.usuarioAtual.apelidoUsuario + "\nEmail: " + this.jogo.usuarioAtual.email + "\nVitórias: " + this.jogo.usuarioAtual.vitorias + "\n\n", "Seu histórico", JOptionPane.INFORMATION_MESSAGE, null);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     /**

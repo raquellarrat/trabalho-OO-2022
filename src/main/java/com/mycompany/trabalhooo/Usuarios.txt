@@ -1,3 +1,3 @@
-Larissa;123larissa;larissa@gmail.com;0
+Larissa;123larissa;larissa@gmail.com;1
 Arthur;123arthur;arthur@gmail.com;0
 Raquel;teste;raquellarrat@hotmail.com;1
