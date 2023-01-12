@@ -39,7 +39,12 @@ public class CadastroView extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         senha = new javax.swing.JTextArea();
         jToggleButton1 = new javax.swing.JToggleButton();
-        button1 = new java.awt.Button();
+        jButton1 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -80,21 +85,36 @@ public class CadastroView extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, -1, 34));
 
+        jToggleButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jToggleButton1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jToggleButton1.setForeground(new java.awt.Color(255, 255, 255));
         jToggleButton1.setText("Cadastrar");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 111, -1));
+        getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 180, 30));
 
-        button1.setLabel("Cadastrar Admin");
-        button1.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Cadastrar Administrador");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button1ActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 150, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 180, 30));
+
+        jPanel3.add(jPanel4);
+
+        jPanel2.add(jPanel1);
+
+        jPanel3.add(jPanel2);
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 100, 360));
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 90, 360));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -102,24 +122,23 @@ public class CadastroView extends javax.swing.JFrame {
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
         // TODO add your handling code here:
 
-            Jogador jogador = new Jogador(email.getText(),senha.getText(),usuario.getText(),"0");
-            jogador.registraUsuario();
-            TelaJogo tela = new TelaJogo();
-            tela.Jogar(usuario.getText(), senha.getText());
-        
+        Jogador jogador = new Jogador(email.getText(), senha.getText(), usuario.getText(), "0");
+        jogador.registraUsuario();
+        TelaJogo tela = new TelaJogo();
+        tela.Jogar(usuario.getText(), senha.getText());
+
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
-    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-            String codigo = JOptionPane.showInputDialog(null,"Informe a senha dos administradores","SENHA", 0);
-            if(codigo.equals("password")){
-                Administrador adm = new Administrador (email.getText(),senha.getText(),usuario.getText(),"0");
-                adm.registraUsuario();   
-            }
-            else{
-                JOptionPane.showConfirmDialog(null, "Senha incorreta, tente novamente, ou entre como usuário", "Senha Incorreta", JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null);
-            }
-    }//GEN-LAST:event_button1ActionPerformed
+        String codigo = JOptionPane.showInputDialog(null, "Informe a senha dos administradores", "SENHA", 0);
+        if (codigo.equals("password")) {
+            Administrador adm = new Administrador(email.getText(), senha.getText(), usuario.getText(), "0");
+            adm.registraUsuario();
+        } else {
+            JOptionPane.showConfirmDialog(null, "Senha incorreta, tente novamente, ou entre como usuário", "Senha Incorreta", JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -158,11 +177,16 @@ public class CadastroView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Button button1;
     private javax.swing.JTextArea email;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

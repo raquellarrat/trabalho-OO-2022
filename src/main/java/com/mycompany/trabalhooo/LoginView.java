@@ -62,6 +62,9 @@ public class LoginView extends javax.swing.JFrame {
         });
         getContentPane().add(senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 224, 34));
 
+        jToggleButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jToggleButton1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jToggleButton1.setForeground(new java.awt.Color(255, 255, 255));
         jToggleButton1.setText("Entrar");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,6 +73,9 @@ public class LoginView extends javax.swing.JFrame {
         });
         getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 111, -1));
 
+        jToggleButton2.setBackground(new java.awt.Color(0, 0, 0));
+        jToggleButton2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jToggleButton2.setForeground(new java.awt.Color(255, 255, 255));
         jToggleButton2.setText("Cadastrar");
         jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
