@@ -20,6 +20,7 @@ public class TrabalhoOO {
 
     public static void main(String[] args) {
     
+        
         LoginView tela = new LoginView();
         tela.setVisible(true);
         ///Para cadastrar um novo usuário administrador, use a senha 'password'

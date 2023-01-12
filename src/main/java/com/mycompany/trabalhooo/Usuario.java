@@ -20,7 +20,7 @@ public abstract class Usuario {
     String senha;
     int vitorias;
     File historico;
-    private int fase;
+   
 
     public Usuario(String email, String senha, String apelidoUsuario,String vitorias) {
         this.apelidoUsuario = apelidoUsuario;
@@ -46,38 +46,13 @@ public abstract class Usuario {
        
         this.historico = arquivo;
 	
-    }/*
-    public void registraUsuario(){
-        try{
-            BufferedWriter buffWriteUsuario = new BufferedWriter(new FileWriter("src/main/java/com/mycompany/trabalhooo/Usuarios.txt",true));
-            buffWriteUsuario.append("\n" + this.apelidoUsuario + ";" + this.senha + ";" + this.email + ";" + this.vitorias);
-            buffWriteUsuario.close();
-            File arquivo = new File("src/main/java/com/mycompany/trabalhooo/Historico/" + apelidoUsuario +".txt");
-            arquivo.createNewFile();
-        }catch(IOException e){
-            System.out.println("Erro ao escrever novo usuário em Usuarios.txt");
-        }
-    }*/
+    }
     
-
-    public int getFase() {
-        return fase;
-    }
-
-    public void setFase(int fase) {
-        this.fase = fase;
-    }
-
     public String getApelidoUsuario() {
         return apelidoUsuario;
     }
 
-    public abstract void gerenciarPalavras(); /// adicionar palavras no jogo;
     
-    
-    public abstract void gerenciarUsuarios();
-    
-    public abstract void Jogar();
     
     public abstract void registraUsuario();
 
